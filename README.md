@@ -1,42 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Slick Portfolio With Svelte.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Vercel-like style portfolio template for developers.
 
-## Setup
+If you want to use the template as it is, you can :
 
-Make sure to install the dependencies:
+- update `src/lib/params.ts` with your data.
+- update `src/lib/index.scss` for custom styling.
+- update `static/favicon.ico` to customize the tab's icon.
 
-```bash
-# yarn
-yarn install
+Feel free to explore and hack the template to your needs if you feel like it.
 
-# npm
-npm install
+Before deploying to `GitHub Pages`:
 
-# pnpm
-pnpm install
-```
+- make sure to change the `base` parameter in `svelte.config.js`.
+- allow `GitHub Pages` in your repo settings.
 
-## Development Server
+## Known issues:
 
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Svelte no longer support `node 14`, use a newer version instead.
