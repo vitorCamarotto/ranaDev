@@ -2,7 +2,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['vuetify/lib/styles/main.sass'],
+  css: ['vuetify/lib/styles/main.sass', '@/assets/css/main.css'],
   build: {
     transpile: ['vuetify'],
   },
@@ -14,7 +14,8 @@ export default defineNuxtConfig({
       })
     },
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxtjs/google-fonts'
   ],
   vite: {
     vue: {
@@ -23,4 +24,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  googleFonts: {
+    families: {
+      Questrial: true
+    }
+  }
 })
