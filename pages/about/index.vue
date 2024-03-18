@@ -3,7 +3,7 @@
     class="p-2 flex flex-col items-center justify-center"
   >
     <h1 class="text-2xl">
-      Vitor Rana Camarotto
+      About me
     </h1>
 
     <p>
