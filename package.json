@@ -16,6 +16,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "^2.4.5",
     "nuxt": "^3.11.0",
+    "nuxt-icon": "^0.6.9",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

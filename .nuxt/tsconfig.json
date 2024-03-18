@@ -65,6 +65,9 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#icon-collections": [
+        "./icon-collections.mjs"
+      ],
       "#vue-router": [
         "./vue-router-stub"
       ],
@@ -108,6 +111,7 @@
     "../.config/nuxt.*",
     "../**/*",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/nuxt-icon/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -116,6 +120,7 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
