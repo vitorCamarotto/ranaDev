@@ -30,7 +30,6 @@
         v-model="drawer"
         location="right"
         :class="handleClass"
-
         temporary
       >
         <v-list
@@ -40,11 +39,14 @@
             v-for="item in items"
             :key="item.title"
           >
-            <v-list-item-content>
-              <v-list-item-title>
-                <nuxt-link :to="item.to">{{ item.title }}</nuxt-link>
-              </v-list-item-title>
-            </v-list-item-content>
+            <v-list-item-title>
+              <nuxt-link
+                :to="item.to"
+                :class="isActiveRoute(item)"
+              >
+                {{ item.title }}
+              </nuxt-link>
+            </v-list-item-title>
         </v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -59,10 +61,10 @@
 <script setup>
 const drawer = ref(false)
 const items = [
-  { title: 'Home', icon: 'mdi-home', to: '/'},
-  { title: 'About', icon: 'mdi-account', to: '/about'},
-  { title: 'Projects', icon: 'mdi-briefcase', to: '/projects'},
-  { title: 'Contact', icon: 'mdi-email', to: '/contact'},
+  { title: 'Home', icon: 'mdi-home', to: '/' },
+  { title: 'About', icon: 'mdi-account', to: '/about' },
+  { title: 'Projects', icon: 'mdi-briefcase', to: '/projects' },
+  { title: 'Contact', icon: 'mdi-email', to: '/contact' },
 ]
 
 function toggleDrawer() {
@@ -83,4 +85,9 @@ const handleClass = computed(() => {
   }
 })
 
+const route = useRoute() // Use useRoute to access the current route
+
+const isActiveRoute = (item) => {
+  return route.path === item.to ? 'text-red-500 cursor-default' : '' // Replace 'text-red-500' with your red text class
+}
 </script>
