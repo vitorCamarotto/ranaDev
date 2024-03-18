@@ -3,24 +3,34 @@
     <v-app>
       <v-app-bar
         app
-        elevation="3"
-        class="navbar text-white"
+        elevation="8"
+        :class="handleClass"
         data-test="navbar"
       >
+        <Icon
+          name="mdi:theme-light-dark"
+          :class="handleClass"
+          class="ms-3 cursor-pointer"
+          size="28px"
+          @click="handleTheme"
+        />
+
         <v-spacer />
 
         <Icon
-          @click="openDrawer"
+          @click="toggleDrawer"
           name="material-symbols:menu"
-          color="black"
+          :class="handleClass"
           size="28px"
-          class="me-6"
+          class="me-6 cursor-pointer"
         />
       </v-app-bar>
 
       <v-navigation-drawer
         v-model="drawer"
         location="right"
+        :class="handleClass"
+
         temporary
       >
         <v-list
@@ -55,8 +65,22 @@ const items = [
   { title: 'Contact', icon: 'mdi-email', to: '/contact'},
 ]
 
-
-function openDrawer() {
+function toggleDrawer() {
   drawer.value = !drawer.value
 }
+
+const colorMode = useColorMode()
+
+function handleTheme() {
+  colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'
+}
+
+const handleClass = computed(() => {
+  if (colorMode.value === 'light') {
+    return 'bg-white text-black'
+  } else {
+    return 'bg-black text-white'
+  }
+})
+
 </script>

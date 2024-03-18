@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
-    '@nuxt/test-utils/module'
+    '@nuxt/test-utils/module',
+    '@nuxtjs/color-mode'
   ],
   vite: {
     vue: {
@@ -29,5 +30,8 @@ export default defineNuxtConfig({
     families: {
       Questrial: true
     }
+  },
+  colorMode: {
+    classSuffix: ''
   }
 })
