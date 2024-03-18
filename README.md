@@ -1,5 +1,7 @@
 # Nuxt 3 Minimal Starter
 
+![image](https://github.com/vitorCamarotto/ranaDev/assets/92797837/e7db873d-de85-4dc6-bd28-03b36f55d48f)
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
