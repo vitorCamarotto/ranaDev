@@ -33,5 +33,8 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: ''
-  }
+  },
+  app: {
+    baseURL: '',
+  },
 })
