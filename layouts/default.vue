@@ -7,7 +7,21 @@
         :class="handleClass"
         data-test="navbar"
       >
-        <div class="hidden md:flex ms-3">
+
+        <NuxtLink :to="'/'">
+          <div class="md:flex ms-3">
+            <Icon
+              name="material-symbols:code-rounded"
+              :class="handleClass"
+              class="me-3 cursor-pointer"
+              size="28px"
+            />
+          </div>
+      </NuxtLink>
+
+      <v-spacer />
+
+        <div class="hidden md:flex me-3">
           <Icon
             name="mdi:theme-light-dark"
             :class="handleClass"
@@ -16,8 +30,6 @@
             @click="handleTheme"
           />
         </div>
-
-        <v-spacer />
 
         <div class="md:hidden">
           <Icon
@@ -111,9 +123,11 @@ const handleClass = computed(() => {
   }
 })
 
-const route = useRoute() // Use useRoute to access the current route
+const route = useRoute()
 
 const isActiveRoute = (item) => {
   return route.path === item.to ? 'text-red-500 cursor-default' : '' // Replace 'text-red-500' with your red text class
 }
+
+
 </script>
