@@ -7,23 +7,49 @@
         :class="handleClass"
         data-test="navbar"
       >
-        <Icon
-          name="mdi:theme-light-dark"
-          :class="handleClass"
-          class="ms-3 cursor-pointer"
-          size="28px"
-          @click="handleTheme"
-        />
+        <div class="hidden md:flex ms-3">
+          <Icon
+            name="mdi:theme-light-dark"
+            :class="handleClass"
+            class="me-3 cursor-pointer"
+            size="28px"
+            @click="handleTheme"
+          />
+        </div>
 
         <v-spacer />
 
-        <Icon
-          @click="toggleDrawer"
-          name="material-symbols:menu"
-          :class="handleClass"
-          size="28px"
-          class="me-6 cursor-pointer"
-        />
+        <div class="md:hidden">
+          <Icon
+            name="mdi:theme-light-dark"
+            :class="handleClass"
+            class="me-3 cursor-pointer"
+            size="28px"
+            @click="handleTheme"
+          />
+        </div>
+
+        <div
+          class="md:hidden"
+        >
+          <Icon
+            @click="toggleDrawer"
+            name="material-symbols:menu"
+            :class="handleClass"
+            size="28px"
+            class="me-6 cursor-pointer"
+          />
+        </div>
+
+        <div class="hidden md:flex">
+          <v-list-item v-for="item in items" :key="item.title">
+            <v-list-item-title>
+              <nuxt-link :to="item.to" :class="isActiveRoute(item)">
+                {{ item.title }}
+              </nuxt-link>
+            </v-list-item-title>
+          </v-list-item>
+        </div>
       </v-app-bar>
 
       <v-navigation-drawer
