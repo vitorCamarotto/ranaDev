@@ -1,19 +1,31 @@
 <template>
-  <div
-    class="p-2 flex flex-col items-center justify-center"
-  >
-    <h1 class="text-2xl mt-10 ms-2">
-      About me
-    </h1>
+  <div class="p-2 flex flex-col">
+    <div class="self-center justify-self-center">
+      <h1 class="text-2xl">
+        About me
+      </h1>
 
-    <div class="ms-2">
-      <p class="">
-        Graduated in Civil Engineering
-      </p>
+      <div class="mt-4">
+        <p class="">
+          Graduated in Civil Engineering
+        </p>
 
-      <p class="">
-        at the #1 Engineering School in Brazil
-      </p>
+        <p class="ms-2">
+          at the #1 Engineering School in Brazil
+        </p>
+      </div>
+
+      <div class="mt-4">
+        <p class="">
+          Software developer since 2021
+        </p>
+      </div>
+
+      <div class="mt-4">
+        <p class="">
+          Working with Vue.js, Ruby on Rails, along with many other technologies
+        </p>
+      </div>
     </div>
   </div>
 </template>
