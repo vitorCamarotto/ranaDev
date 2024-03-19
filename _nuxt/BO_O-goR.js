@@ -1,0 +1,1 @@
+import{_ as e}from"./DlAUqK2U.js";import{c as t,o as s,a as c}from"./Dxl_ZGwN.js";const o={},r={class:"p-2 flex flex-col items-center justify-center"},n=c("h1",{class:"text-2xl"}," Projects ",-1),_=[n];function a(i,f){return s(),t("div",r,_)}const x=e(o,[["render",a]]);export{x as default};
