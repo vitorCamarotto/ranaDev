@@ -16,5 +16,9 @@
   },
   "projects": {
     "title": "Projetos"
+  },
+  "playground": {
+    "title": "Playground",
+    "description": "Aqui é onde eu pratico minhas habilidades de front-end."
   }
 }

@@ -8,7 +8,7 @@
         data-test="navbar"
       >
 
-        <NuxtLink :to="'/'">
+        <NuxtLink :to="'/playground'">
           <div class="md:flex ms-3">
             <Icon
               name="material-symbols:code-rounded"
