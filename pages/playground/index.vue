@@ -1,19 +1,16 @@
 <template>
   <div>
-    <h1>
+    <h1 class="mb-6">
       {{ $t('playground.title') }}
     </h1>
 
-    <p>
+    <p class="mb-6">
       {{ $t('playground.description') }}
     </p>
 
-    <PlaygroundHackerLetters>
-
-    </PlaygroundHackerLetters>
+    <PlaygroundHackerLetters />
 
   </div>
-
 </template>
 
 <script setup>

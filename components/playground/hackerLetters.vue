@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 ref="heading">VITOR</h4>
+    <h1 ref="heading">VITOR</h1>
   </div>
 </template>
 
