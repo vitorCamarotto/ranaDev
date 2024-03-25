@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 ref="heading">VITOR</h1>
+    <h4 ref="heading">VITOR</h4>
   </div>
 </template>
 
@@ -37,18 +37,3 @@ onMounted(() => {
   }
 })
 </script>
-
-<style>
-  body {
-    background: black;
-  }
-
-  h1 {
-    display: grid;
-    place-items: center;
-    color: white;
-    font-size: 5rem;
-    font-family: "Space Mono", monospace;
-  }
-
-</style>

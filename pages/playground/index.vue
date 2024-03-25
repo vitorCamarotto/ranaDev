@@ -4,11 +4,14 @@
       {{ $t('playground.title') }}
     </h1>
 
-    <div>
-      <p>
-        {{ $t('playground.description') }}
-      </p>
-    </div>
+    <p>
+      {{ $t('playground.description') }}
+    </p>
+
+    <PlaygroundHackerLetters>
+
+    </PlaygroundHackerLetters>
+
   </div>
 
 </template>
