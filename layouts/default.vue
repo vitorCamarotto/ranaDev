@@ -17,9 +17,9 @@
               size="28px"
             />
           </div>
-      </NuxtLink>
+        </NuxtLink>
 
-      <v-spacer />
+        <v-spacer />
 
         <div>
           <Icon
@@ -31,25 +31,17 @@
           />
         </div>
 
-        <ClientOnly>
-          <div>
-            <Icon
-              :name="`game-icons:${country}-flag`"
-              :class="handleClass"
-              class="me-3 cursor-pointer"
-              size="28px"
-              @click="changeLanguage"
-            />
-          </div>
+        <div>
+          <Icon
+            :name="`game-icons:${country}-flag`"
+            :class="handleClass"
+            class="me-3 cursor-pointer"
+            size="28px"
+            @click="changeLanguage"
+          />
+        </div>
 
-        </ClientOnly>
-
-
-
-
-        <div
-          class="md:hidden"
-        >
+        <div class="md:hidden">
           <Icon
             @click="toggleDrawer"
             name="material-symbols:menu"
@@ -63,37 +55,17 @@
           <v-list-item v-for="item in items" :key="item.title">
             <v-list-item-title>
               <nuxt-link :to="localePath(item.to)" :class="isActiveRoute(item)">
-                {{ item.title }}
+                {{ $t(item.title) }}
               </nuxt-link>
             </v-list-item-title>
           </v-list-item>
         </div>
       </v-app-bar>
 
-      <v-navigation-drawer
-        v-model="drawer"
-        location="right"
+      <MobileNavDrawer
         :class="handleClass"
-        temporary
-      >
-        <v-list
-          :items="items"
-        >
-          <v-list-item
-            v-for="item in items"
-            :key="item.title"
-          >
-            <v-list-item-title>
-              <nuxt-link
-                :to="localePath(item.to)"
-                :class="isActiveRoute(item)"
-              >
-                {{ item.title }}
-              </nuxt-link>
-            </v-list-item-title>
-        </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
+        :visible="drawerVisible"
+      />
 
       <v-main>
         <slot />
@@ -103,23 +75,14 @@
 </template>
 
 <script setup>
-const drawer = ref(false)
-const items = [
-  { title: 'Home', icon: 'mdi-home', to: '/' },
-  { title: 'About', icon: 'mdi-account', to: '/about' },
-  { title: 'Projects', icon: 'mdi-briefcase', to: '/projects' },
-  { title: 'Contact', icon: 'mdi-email', to: '/contact' },
-]
-
-function toggleDrawer() {
-  drawer.value = !drawer.value
-}
+import items from '../constants/paths.js'
 
 const colorMode = useColorMode()
+const route = useRoute()
+const { locale, setLocale } = useI18n()
+const localePath = useLocalePath()
 
-function handleTheme() {
-  colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'
-}
+const drawerVisible = ref(false)
 
 const handleClass = computed(() => {
   if (colorMode.value === 'light') {
@@ -129,15 +92,6 @@ const handleClass = computed(() => {
   }
 })
 
-const route = useRoute()
-
-const isActiveRoute = (item) => {
-  return route.path === item.to ? 'text-red-500 cursor-default' : ''
-}
-
-const { locale, setLocale } = useI18n()
-const localePath = useLocalePath()
-
 const country = computed(() => {
   if (locale.value === 'en') {
     return 'brazil'
@@ -145,6 +99,18 @@ const country = computed(() => {
     return 'usa'
   }
 })
+
+const isActiveRoute = (item) => {
+  return route.path === item.to ? 'text-red-500 cursor-default' : ''
+}
+
+function toggleDrawer() {
+  drawerVisible.value = !drawerVisible.value
+}
+
+function handleTheme() {
+  colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'
+}
 
 function changeLanguage() {
   if (locale.value === 'en') {

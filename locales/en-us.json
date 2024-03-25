@@ -1,5 +1,9 @@
 {
   "welcome": "Welcome!",
+  "homeRoute": "Home",
+  "aboutRoute": "About",
+  "contactRoute": "Contact",
+  "projectsRoute": "Projects",
   "about": {
     "title": "About Me",
     "description1": "Software Engineer since 2021.",
