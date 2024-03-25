@@ -1,0 +1,16 @@
+{
+  "welcome": "Welcome!",
+  "about": {
+    "title": "About Me",
+    "description1": "Software Engineer since 2021.",
+    "description2": "Working primarily with Vue.js and Ruby on Rails.",
+    "description3": "Passionate about creating real-world applications.",
+    "description4": "Graduated in Civil Engineering from the #1 University in Latin America."
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}

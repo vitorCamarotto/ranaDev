@@ -1,0 +1,16 @@
+{
+  "welcome": "Bem vindo!",
+  "about": {
+    "title": "Sobre mim",
+    "description1": "Engenheiro de Software desde 2021.",
+    "description2": "Trabalhando principalmente com Vue.js e Ruby on Rails.",
+    "description3": "Apaixonado por criar aplicações reais.",
+    "description4": "Formado em Engenharia Civil pela Universidade nº 1 da América Latina."
+  },
+  "contact": {
+    "title": "Contato"
+  },
+  "projects": {
+    "title": "Projetos"
+  }
+}
