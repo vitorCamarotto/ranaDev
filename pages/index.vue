@@ -17,17 +17,26 @@
 </template>
 
 <script setup>
+const { locale } = useI18n()
+
 let interval = ref(null)
 const currentIndex = ref(0)
 
-const currentText = computed(() => texts[currentIndex.value])
-
-const texts = ['Full Stack Developer', 'Creator', 'Problem Solver']
-
 onMounted(() => {
   interval = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % texts.length
-  }, 4000)
+    currentIndex.value = (currentIndex.value + 1) % englishTexts.length
+  }, 3000)
+})
+
+const englishTexts = ['Full Stack Developer', 'Creator', 'Engineer']
+const portugueseTexts = ['Desenvolvedor Full Stack', 'Criador', 'Engenheiro']
+
+const currentText = computed(() => {
+  if(locale.value === 'en') {
+    return englishTexts[currentIndex.value]
+  } else {
+    return portugueseTexts[currentIndex.value]
+  }
 })
 
 onUnmounted(() => {

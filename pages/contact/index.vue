@@ -17,7 +17,6 @@
             <div class="self-center justify-self-center">
               <Icon
                 name="akar-icons:github-outline-fill"
-                :class="handleClass"
                 class="me-3 cursor-pointer"
                 size="50px"
               />
