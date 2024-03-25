@@ -62,7 +62,7 @@
         <div class="hidden md:flex">
           <v-list-item v-for="item in items" :key="item.title">
             <v-list-item-title>
-              <nuxt-link :to="item.to" :class="isActiveRoute(item)">
+              <nuxt-link :to="localePath(item.to)" :class="isActiveRoute(item)">
                 {{ item.title }}
               </nuxt-link>
             </v-list-item-title>
@@ -85,7 +85,7 @@
           >
             <v-list-item-title>
               <nuxt-link
-                :to="item.to"
+                :to="localePath(item.to)"
                 :class="isActiveRoute(item)"
               >
                 {{ item.title }}
@@ -132,10 +132,12 @@ const handleClass = computed(() => {
 const route = useRoute()
 
 const isActiveRoute = (item) => {
-  return route.path === item.to ? 'text-red-500 cursor-default' : '' // Replace 'text-red-500' with your red text class
+  return route.path === item.to ? 'text-red-500 cursor-default' : ''
 }
 
-const { locale } = useI18n()
+const { locale, setLocale } = useI18n()
+const localePath = useLocalePath()
+
 const country = computed(() => {
   if (locale.value === 'en') {
     return 'brazil'
@@ -146,9 +148,9 @@ const country = computed(() => {
 
 function changeLanguage() {
   if (locale.value === 'en') {
-    locale.value = 'pt'
+    setLocale('pt')
   } else {
-    locale.value = 'en'
+    setLocale('en')
   }
 }
 
