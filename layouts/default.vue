@@ -21,7 +21,7 @@
 
       <v-spacer />
 
-        <div class="hidden md:flex me-3">
+        <div>
           <Icon
             name="mdi:theme-light-dark"
             :class="handleClass"
@@ -31,15 +31,21 @@
           />
         </div>
 
-        <div class="md:hidden">
-          <Icon
-            name="mdi:theme-light-dark"
-            :class="handleClass"
-            class="me-3 cursor-pointer"
-            size="28px"
-            @click="handleTheme"
-          />
-        </div>
+        <ClientOnly>
+          <div>
+            <Icon
+              :name="`game-icons:${country}-flag`"
+              :class="handleClass"
+              class="me-3 cursor-pointer"
+              size="28px"
+              @click="changeLanguage"
+            />
+          </div>
+
+        </ClientOnly>
+
+
+
 
         <div
           class="md:hidden"
@@ -129,5 +135,21 @@ const isActiveRoute = (item) => {
   return route.path === item.to ? 'text-red-500 cursor-default' : '' // Replace 'text-red-500' with your red text class
 }
 
+const { locale } = useI18n()
+const country = computed(() => {
+  if (locale.value === 'en') {
+    return 'brazil'
+  } else {
+    return 'usa'
+  }
+})
+
+function changeLanguage() {
+  if (locale.value === 'en') {
+    locale.value = 'pt'
+  } else {
+    locale.value = 'en'
+  }
+}
 
 </script>

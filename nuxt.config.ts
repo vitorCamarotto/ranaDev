@@ -17,7 +17,15 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxtjs/google-fonts',
     '@nuxt/test-utils/module',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    ['@nuxtjs/i18n', {
+      locales: [
+        { code: 'en', iso: 'en-US', file: 'en-us.json' },
+        { code: 'pt', iso: 'pt-BR', file: 'pt-br.json' }
+      ],
+      langDir: 'locales/',
+      defaultLocale: 'en',
+    }]
   ],
   vite: {
     vue: {
@@ -33,5 +41,8 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: ''
+  },
+  i18n: {
+    vueI18n: 'i18n.config.ts'
   }
 })

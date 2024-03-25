@@ -12,6 +12,7 @@
 /// <reference path="types/app.config.d.ts" />
 /// <reference types="vite/client" />
 /// <reference types="vitest/import-meta" />
+/// <reference path="types/i18n-plugin.d.ts" />
 /// <reference path="vue-router-stub.d.ts" />
 /// <reference types="vue-router" />
 /// <reference path="types/middleware.d.ts" />
