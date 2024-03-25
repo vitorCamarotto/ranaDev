@@ -16,5 +16,9 @@
   },
   "projects": {
     "title": "Projects"
+  },
+  "playground": {
+    "title": "Playground",
+    "description": "This is where I like to practice some front-end skills."
   }
 }
