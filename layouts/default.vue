@@ -109,7 +109,7 @@ function toggleDrawer() {
 }
 
 function handleTheme() {
-  colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'
+  colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
 }
 
 function changeLanguage() {
