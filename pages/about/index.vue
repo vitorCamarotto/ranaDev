@@ -5,7 +5,7 @@
         {{ $t('about.title') }}
       </h1>
 
-      <h2 class="mt-12">
+      <h2 class="mt-8">
         {{ $t('about.me') }}
       </h2>
 
@@ -27,17 +27,18 @@
         {{ $t('about.professionalExp') }}
       </h2>
 
-      <v-chip
-        variant="outlined"
-        class="mt-4"
-        style="
-          color: #EF4444;
-          font-weight: 600;
-        "
-      >
-        {{ $t('about.professionalChip') }}
-      </v-chip>
-
+      <div class="flex justify-center mt-4">
+        <v-chip
+          variant="outlined"
+          rounded
+          style="
+            color: #EF4444;
+            font-weight: 600;
+          "
+        >
+          {{ $t('about.professionalChip') }}
+        </v-chip>
+      </div>
 
       <div class="mt-4">
         <p v-html="$t('about.professionalDescription', { link: capimLink })" />

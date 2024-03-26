@@ -5,13 +5,13 @@
   "contactRoute": "Contato",
   "projectsRoute": "Projetos",
   "about": {
-    "title": "Sobre",
-    "me": "Mim",
+    "title": "Sobre...",
+    "me": "...Mim",
     "description1": "Engenheiro de Software desde 2021.",
     "description2": "Trabalhando principalmente com Vue.js e Ruby on Rails.",
     "description3": "Apaixonado por criar aplicações reais.",
     "description4": "Formado em Engenharia Civil na Escola Politécnica da USP.",
-    "professionalExp": "Minha Experiência Profissional",
+    "professionalExp": "...Minha Experiência Profissional",
     "professionalChip": "2021 - Presente",
     "professionalDescription": "Desde 2021, trabalho como Engenheiro de Software para uma Fintech Startup no ramo odontológico. Fui responsável por recursos de backend e frontend e desenvolvimento de novos produtos.",
     "professionalDescription2": "Evoluí rapidamente de estagiário para uma posição de nível pleno, e estou constantemente buscando desafios e maneiras de impactar a vida de outras pessoas."
@@ -20,10 +20,26 @@
     "title": "Contato"
   },
   "projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "website": "Site pessoal",
+    "websiteDescription": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
+    "websiteRepo": "{link}.",
+    "techStack": "Tecnologias"
   },
   "playground": {
     "title": "Playground",
     "description": "Aqui é onde eu pratico minhas habilidades de front-end."
+  },
+  "components": {
+    "technologies": {
+      "Nuxt": "Nuxt",
+      "Tailwind": "Tailwind",
+      "Vuetify": "Vuetify",
+      "Javascript": "Javascript",
+      "i18n": "i18n",
+      "Vuejs": "Vue",
+      "Netlify": "Netlify",
+      "Bun": "Bun"
+    }
   }
 }
