@@ -8,11 +8,11 @@
         data-test="navbar"
       >
 
-        <NuxtLink :to="'/playground'">
+        <NuxtLink :to="localePath('/playground')">
           <div class="md:flex ms-3">
             <Icon
               name="material-symbols:code-rounded"
-              :style="route.path === '/playground' ? 'color: #EF4444;' : 'color: inherit;'"
+              :style="codeIconStyle"
               class="me-3 cursor-pointer"
               size="28px"
             />
@@ -105,8 +105,19 @@ const themeIcon = computed(() => {
 })
 
 const isActiveRoute = (item) => {
-  return route.path === item.to ? 'text-red-500 cursor-default' : ''
+  const basePath = locale.value === 'pt' ? '/pt' : ''
+
+  const matchedPath = basePath + (item.to === '/' && basePath ? '' : item.to)
+
+  return route.path === matchedPath ? 'text-red-500 cursor-default' : ''
 }
+
+const codeIconStyle = computed(() => {
+  const isPlayground = route.path.endsWith('/playground')
+
+  return `color: ${isPlayground ? '#EF4444' : 'inherit'};`
+})
+
 
 function toggleDrawer() {
   drawerVisible.value = !drawerVisible.value

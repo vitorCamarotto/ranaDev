@@ -48,7 +48,7 @@ onMounted(() => {
       iterations += 1/3
 
       if (iterations > iterationLimit.value) clearInterval(interval)
-    }, 30);
+    }, 20);
   }
 })
 
