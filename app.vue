@@ -3,7 +3,7 @@
     <NuxtLayout>
       <NuxtPage
         :class="handleClass"
-        class="h-full"
+        class="h-full mb-24"
       />
     </NuxtLayout>
   </div>

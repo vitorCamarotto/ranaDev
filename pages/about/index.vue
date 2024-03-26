@@ -5,7 +5,7 @@
         {{ $t('about.title') }}
       </h1>
 
-      <h2 class="mt-16">
+      <h2 class="mt-12">
         {{ $t('about.me') }}
       </h2>
 
