@@ -39,7 +39,8 @@
       "i18n": "i18n",
       "Vuejs": "Vue",
       "Netlify": "Netlify",
-      "Bun": "Bun"
+      "Bun": "Bun",
+      "GoogleFonts": "Google Fonts"
     }
   }
 }
