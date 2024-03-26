@@ -12,13 +12,23 @@ const name = ['Vitor Rana Camarotto ', 'DEV']
 let iterationLimit = ref(0)
 let nameIndex = ref(0)
 let changeLettersInterval
+let animationLimit = ref(0)
 
 onMounted(() => {
+  iterationLimit.value = name[0].length
+  animateLettersChange()
+
   changeLettersInterval = setInterval(() => {
     nameIndex.value = (nameIndex.value + 1) % name.length
     iterationLimit.value = name[nameIndex.value].length
 
     animateLettersChange()
+
+    animationLimit.value += 1
+
+    if (animationLimit.value > 1) {
+      clearInterval(changeLettersInterval)
+    }
   }, 4000);
 
   function animateLettersChange() {
