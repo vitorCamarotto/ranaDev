@@ -28,7 +28,8 @@
   },
   "playground": {
     "title": "Playground",
-    "description": "This is where I like to practice some front-end skills."
+    "description": "This is where I like to practice some front-end skills.",
+    "description2": "To activate hover on mobile, tap in and out of stuff :)"
   },
   "components": {
     "technologies": {
