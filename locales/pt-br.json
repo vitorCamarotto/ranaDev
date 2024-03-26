@@ -5,11 +5,16 @@
   "contactRoute": "Contato",
   "projectsRoute": "Projetos",
   "about": {
-    "title": "Sobre mim",
+    "title": "Sobre",
+    "me": "Mim",
     "description1": "Engenheiro de Software desde 2021.",
     "description2": "Trabalhando principalmente com Vue.js e Ruby on Rails.",
     "description3": "Apaixonado por criar aplicações reais.",
-    "description4": "Formado em Engenharia Civil pela Universidade nº 1 da América Latina."
+    "description4": "Formado em Engenharia Civil na Escola Politécnica da USP.",
+    "professionalExp": "Minha Experiência Profissional",
+    "professionalChip": "2021 - Presente",
+    "professionalDescription": "Desde 2021, trabalho como Engenheiro de Software para uma Fintech Startup no ramo odontológico. Fui responsável por recursos de backend e frontend e desenvolvimento de novos produtos.",
+    "professionalDescription2": "Evoluí rapidamente de estagiário para uma posição de nível pleno, e estou constantemente buscando desafios e maneiras de impactar a vida de outras pessoas."
   },
   "contact": {
     "title": "Contato"

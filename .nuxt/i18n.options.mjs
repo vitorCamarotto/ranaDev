@@ -31,7 +31,7 @@ export const nuxtI18nOptions = {
   },
   "compilation": {
     "jit": true,
-    "strictMessage": true,
+    "strictMessage": false,
     "escapeHtml": false
   },
   "customBlocks": {
