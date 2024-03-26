@@ -20,4 +20,8 @@ const handleClass = computed(() => {
   }
 })
 
+useHead({
+  title: 'ranaDev'
+})
+
 </script>
