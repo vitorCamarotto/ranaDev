@@ -5,13 +5,13 @@
   "contactRoute": "Contact",
   "projectsRoute": "Projects",
   "about": {
-    "title": "About",
-    "me": "Me",
+    "title": "About...",
+    "me": "...Me",
     "description1": "Software Engineer since 2021.",
     "description2": "Working primarily with Vue.js and Ruby on Rails.",
     "description3": "Passionate about creating real-world applications.",
     "description4": "Graduated in Civil Engineering from the {link}, Polytechnic School of Engineering from University of São Paulo.",
-    "professionalExp": "My Professional Experience",
+    "professionalExp": "...My Professional Experience",
     "professionalChip": "2021 - Present",
     "professionalDescription": "Since 2021, I have worked as a Software Engineer at a {link}. I was responsible for backend and frontend features and new products development.",
     "professionalDescription2": "I have quickly evolved from intern to a mid-level position, and I am constantly seeking challenges and ways to impact other people's lives."
@@ -20,10 +20,27 @@
     "title": "Contact"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "website": "Personal Website",
+    "websiteDescription": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Javascript, Node.js)",
+    "websiteRepo": "{link}.",
+    "techStack": "Technologies"
   },
   "playground": {
     "title": "Playground",
     "description": "This is where I like to practice some front-end skills."
+  },
+  "components": {
+    "technologies": {
+      "Nuxt": "Nuxt",
+      "Tailwind": "Tailwind",
+      "Vuetify": "Vuetify",
+      "Javascript": "Javascript",
+      "i18n": "i18n",
+      "Vuejs": "Vue",
+      "Netlify": "Netlify",
+      "Bun": "Bun",
+      "GoogleFonts": "Google Fonts"
+    }
   }
 }

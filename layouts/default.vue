@@ -12,7 +12,6 @@
           <div class="md:flex ms-3">
             <Icon
               name="material-symbols:code-rounded"
-              :class="handleClass"
               class="me-3 cursor-pointer"
               size="28px"
             />
@@ -24,7 +23,6 @@
         <div>
           <Icon
             :name="`solar:${themeIcon}-bold-duotone`"
-            :class="handleClass"
             class="me-3 cursor-pointer"
             size="28px"
             @click="handleTheme"
@@ -34,7 +32,6 @@
         <div>
           <Icon
             :name="`game-icons:${countryIcon}-flag`"
-            :class="handleClass"
             class="me-3 cursor-pointer"
             size="28px"
             @click="changeLanguage"
@@ -45,7 +42,6 @@
           <Icon
             @click="toggleDrawer"
             name="material-symbols:menu"
-            :class="handleClass"
             size="28px"
             class="me-6 cursor-pointer"
           />
@@ -63,7 +59,6 @@
       </v-app-bar>
 
       <MobileNavDrawer
-        :class="handleClass"
         :visible="drawerVisible"
       />
 
