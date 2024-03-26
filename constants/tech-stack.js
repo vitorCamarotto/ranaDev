@@ -17,12 +17,13 @@ const websiteStack = [
   {
     name: 'Vuetify',
     icon: 'mdi:vuetify',
-    color: '#bae6fd',
+    color: '#7dd3fc',
+    darkModeOnly: true,
   },
   {
     name: 'Javascript',
     icon: 'mdi:language-javascript',
-    color: '#f7df1e',
+    color: '#eab308',
   },
   {
     name: 'i18n',
@@ -38,6 +39,7 @@ const websiteStack = [
     name: 'Bun',
     icon: 'devicon-plain:bun',
     color: '#fef3c7',
+    darkModeOnly: true,
   },
   {
     name: 'GoogleFonts',

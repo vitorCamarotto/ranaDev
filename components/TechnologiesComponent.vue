@@ -19,10 +19,9 @@
         <div class="mt-4 justify-start">
           <v-chip
             rounded
-            :style="`
-              color: ${tech.color};
-              font-weight: 600;`
-            "
+            :variant="darkModeOnly(tech.darkModeOnly) ? 'elevated' : 'tonal'"
+            class="tech-chip cursor-default"
+            :style="chipStyle(tech.color)"
           >
             <template v-slot:prepend>
               <Icon
@@ -43,6 +42,8 @@
 </template>
 
 <script setup>
+const colorMode = useColorMode()
+
 const props = defineProps({
   techStack: {
     type: Array,
@@ -50,4 +51,29 @@ const props = defineProps({
   }
 })
 
+const darkModeOnly = computed(() => (darkMode) => {
+  const themeLight = colorMode.value === 'light'
+
+  return darkMode === true && themeLight === true
+})
+
+
+const chipStyle = (color) => {
+  return {
+    color: color,
+    fontWeight: 600,
+    border: '3px solid transparent',
+    transition: 'all 0.3s ease-in-out',
+    '--chip-hover-border-color': `${color}33`,
+    '--chip-hover-box-shadow': `0 0 16px ${color}`
+  };
+}
+
 </script>
+
+<style scoped>
+.tech-chip:hover {
+  border-color: var(--chip-hover-border-color);
+  box-shadow: var(--chip-hover-box-shadow);
+}
+</style>
