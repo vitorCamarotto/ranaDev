@@ -23,7 +23,7 @@
 
         <div>
           <Icon
-            name="mdi:theme-light-dark"
+            :name="`solar:${themeIcon}-bold-duotone`"
             :class="handleClass"
             class="me-3 cursor-pointer"
             size="28px"
@@ -33,7 +33,7 @@
 
         <div>
           <Icon
-            :name="`game-icons:${country}-flag`"
+            :name="`game-icons:${countryIcon}-flag`"
             :class="handleClass"
             class="me-3 cursor-pointer"
             size="28px"
@@ -92,11 +92,19 @@ const handleClass = computed(() => {
   }
 })
 
-const country = computed(() => {
+const countryIcon = computed(() => {
   if (locale.value === 'en') {
     return 'brazil'
   } else {
     return 'usa'
+  }
+})
+
+const themeIcon = computed(() => {
+  if (colorMode.value === 'light') {
+    return 'moon'
+  } else {
+    return 'sun'
   }
 })
 
