@@ -1,7 +1,7 @@
 <template>
   <div class="p-2 flex flex-col">
     <div class="self-center justify-self-center">
-      <h1 class="text-2xl text-center">
+      <h1 class="text-center">
         <HomeHackerLetters />
       </h1>
 

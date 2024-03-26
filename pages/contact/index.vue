@@ -1,7 +1,7 @@
 <template>
   <div class="p-2 flex flex-col">
     <div class="self-center justify-self-center">
-      <h1 class="text-2xl">
+      <h1>
         {{ $t('contact.title') }}
       </h1>
 
