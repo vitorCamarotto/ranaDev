@@ -12,6 +12,7 @@
           <div class="md:flex ms-3">
             <Icon
               name="material-symbols:code-rounded"
+              :style="route.path === '/playground' ? 'color: #EF4444;' : 'color: inherit;'"
               class="me-3 cursor-pointer"
               size="28px"
             />
