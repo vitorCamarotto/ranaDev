@@ -1,6 +1,16 @@
 <template>
-  <div>
-    <h1 ref="heading">VITOR</h1>
+  <div class="flex flex-col items-center mt-16">
+    <v-chip
+      variant="outlined"
+      rounded
+      style="
+        color: #EF4444;
+        font-weight: 600;
+      "
+    >
+      Hover Matrix letters
+    </v-chip>
+    <h1 class="mt-8" ref="heading">VITOR</h1>
   </div>
 </template>
 
