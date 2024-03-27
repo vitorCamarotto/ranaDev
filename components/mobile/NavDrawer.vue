@@ -31,6 +31,8 @@
 import items from '../constants/paths.js'
 
 const localePath = useLocalePath()
+const { locale } = useI18n()
+
 const route = useRoute()
 const colorMode = useColorMode()
 
@@ -57,6 +59,10 @@ const handleClass = computed(() => {
 
 
 const isActiveRoute = (item) => {
-  return route.path === item.to ? 'text-red-500 cursor-default' : ''
+  const basePath = locale.value === 'pt' ? '/pt' : ''
+
+  const matchedPath = basePath + (item.to === '/' && basePath ? '' : item.to)
+
+  return route.path === matchedPath ? 'text-red-500 cursor-default' : ''
 }
 </script>

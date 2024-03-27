@@ -7,8 +7,7 @@
         :class="handleClass"
         data-test="navbar"
       >
-
-        <NuxtLink :to="localePath('/playground')">
+        <NuxtLink :to="localePath('/')">
           <div class="md:flex ms-3">
             <Icon
               name="material-symbols:code-rounded"
@@ -113,7 +112,7 @@ const isActiveRoute = (item) => {
 }
 
 const codeIconStyle = computed(() => {
-  const isPlayground = route.path.endsWith('/playground')
+  const isPlayground = route.path.endsWith('/') || route.path.endsWith('/pt')
 
   return `color: ${isPlayground ? '#EF4444' : 'inherit'};`
 })
