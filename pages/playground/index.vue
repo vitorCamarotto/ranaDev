@@ -22,8 +22,14 @@
 </template>
 
 <script setup>
-import { websiteStack } from '../../constants/tech-stack.js'
-
+const websiteStack = [
+  {
+    name: 'Bun',
+    icon: 'devicon-plain:bun',
+    color: '#fef3c7',
+    darkModeOnly: true,
+  }
+]
 </script>
 
 <style>

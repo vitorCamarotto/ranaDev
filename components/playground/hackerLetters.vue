@@ -39,7 +39,7 @@ onMounted(() => {
         }
       ).join("")
 
-      iterations += 1/2
+      iterations += 1/12
 
       if (iterations > iterationLimit.value) clearInterval(interval)
     }, 20);

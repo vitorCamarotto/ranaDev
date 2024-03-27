@@ -1,6 +1,6 @@
 <template>
   <div class="p-2 flex flex-col">
-    <div class="self-center justify-self-center">
+    <div class="self-center justify-self-center md:max-w-[540px]">
       <h1 class="text-center">
         <HomeHackerLetters />
       </h1>
@@ -12,6 +12,8 @@
           </span>
         </transition>
       </p>
+
+      <HomeNavCards />
     </div>
   </div>
 </template>

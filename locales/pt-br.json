@@ -4,6 +4,7 @@
   "aboutRoute": "Sobre",
   "contactRoute": "Contato",
   "projectsRoute": "Projetos",
+  "playgroundRoute": "Playground",
   "about": {
     "title": "Sobre...",
     "me": "...Mim",
@@ -29,7 +30,7 @@
   "playground": {
     "title": "Playground",
     "description": "Aqui é onde eu pratico minhas habilidades de front-end.",
-    "description2": "Para ativar o hover no mobile, toque na tela :)"
+    "description2": "Para ativar o hover no mobile, toque dentro e fora dos componentes :)"
   },
   "components": {
     "technologies": {
