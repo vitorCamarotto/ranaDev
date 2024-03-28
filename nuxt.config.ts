@@ -47,5 +47,8 @@ export default defineNuxtConfig({
     compilation: {
       strictMessage: false
     },
+  },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
   }
 })
