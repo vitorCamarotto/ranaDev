@@ -8,7 +8,7 @@
         <v-col cols="12">
           <v-card
             class="mt-6"
-            :class="`card card--${colorMode.value}`"
+            :class="`card card--${theme}`"
             rounded
           >
             <NuxtLink
@@ -20,7 +20,7 @@
                   <v-card-title
                     class="text-white"
                   >
-                  <p :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'">
+                  <p :class="theme === 'dark' ? 'text-white' : 'text-black'">
                     {{ $t(card.name) }}
                   </p>
                   </v-card-title>
@@ -39,6 +39,9 @@
 import navCards from '../../constants/nav-cards.js'
 const colorMode = useColorMode()
 
+const theme = computed(
+ () => colorMode.value === 'light' ? 'light' : 'dark'
+)
 
 </script>
 
@@ -54,9 +57,9 @@ const colorMode = useColorMode()
 
 
   &--light {
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,165,165,1) 85%, rgba(255,255,255,1) 100%);
-    border-left: 1px solid #fca5a5;
-    border-top: 1px solid #fca5a5;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(165,243,252,1) 85%, rgba(255,255,255,1) 100%);
+    border-left: 1px solid #a5f3fc;
+    border-top: 1px solid #a5f3fc;
   }
 }
 
