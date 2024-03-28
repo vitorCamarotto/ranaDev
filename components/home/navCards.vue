@@ -12,7 +12,7 @@
             rounded
           >
             <NuxtLink
-              :to="card.to"
+              :to="localePath(card.to)"
               class="text-decoration-none"
             >
               <div class="d-flex flex-no-wrap justify-space-between">
@@ -39,6 +39,7 @@
 import navCards from '../../constants/nav-cards.js'
 const colorMode = useColorMode()
 
+const localePath = useLocalePath()
 
 </script>
 
