@@ -14,7 +14,7 @@
     "description4": "Formado em Engenharia Civil na Escola Politécnica da USP.",
     "professionalExp": "...Minha Experiência Profissional",
     "professionalChip": "2021 - Presente",
-    "professionalDescription": "Desde 2021, trabalho como Engenheiro de Software para uma Fintech Startup no ramo odontológico. Fui responsável por recursos de backend e frontend e desenvolvimento de novos produtos.",
+    "professionalDescription": "Como Engenheiro de Software para uma Fintech Startup no ramo odontológico, fui responsável por recursos de backend e frontend e desenvolvimento de novos produtos.",
     "professionalDescription2": "Evoluí rapidamente de estagiário para uma posição de nível pleno, e estou constantemente buscando desafios e maneiras de impactar a vida de outras pessoas."
   },
   "contact": {
@@ -42,7 +42,12 @@
       "Vuejs": "Vue",
       "Netlify": "Netlify",
       "Bun": "Bun",
-      "GoogleFonts": "Google Fonts"
+      "GoogleFonts": "Google Fonts",
+      "Rails": "Ruby on Rails",
+      "Docker": "Docker",
+      "Pinia": "Pinia",
+      "Jest": "Jest",
+      "Postgres": "PostgreSQL"
     }
   }
 }
