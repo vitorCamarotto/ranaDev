@@ -1,12 +1,13 @@
 <template>
-  <div class="flex flex-col items-center mt-8">
+  <div
+    class="flex flex-col items-center mt-8"
+    :class="themeColor"
+  >
     <v-chip
       variant="outlined"
       rounded
-      style="
-        color: #EF4444;
-        font-weight: 600;
-      "
+      class=""
+      style="font-weight: 600;"
     >
       {{ $t('projects.techStack') }}
     </v-chip>
@@ -49,6 +50,10 @@ const props = defineProps({
     type: Array,
     required: true
   }
+})
+
+const themeColor = computed(() => {
+  return colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
 })
 
 const darkModeOnly = computed(() => (darkMode) => {

@@ -108,13 +108,18 @@ const isActiveRoute = (item) => {
 
   const matchedPath = basePath + (item.to === '/' && basePath ? '' : item.to)
 
-  return route.path === matchedPath ? 'text-red-500 cursor-default' : ''
+  const themeColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
+  const twClass = `${themeColor} cursor-default`
+
+  return route.path === matchedPath ? twClass : ''
 }
 
 const codeIconStyle = computed(() => {
   const isPlayground = route.path.endsWith('/') || route.path.endsWith('/pt')
 
-  return `color: ${isPlayground ? '#EF4444' : 'inherit'};`
+  const themeColor = colorMode.value === 'light' ? '#22d3ee ': '#EF4444'
+
+  return `color: ${isPlayground ? themeColor : 'inherit'};`
 })
 
 

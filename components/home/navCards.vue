@@ -6,14 +6,14 @@
     >
       <v-row>
         <v-col cols="12">
-          <v-card
-            class="mt-6"
-            :class="`card card--${theme}`"
-            rounded
+          <NuxtLink
+            :to="localePath(card.to)"
+            class="text-decoration-none"
           >
-            <NuxtLink
-              :to="localePath(card.to)"
-              class="text-decoration-none"
+            <v-card
+              class="mt-6"
+              :class="`card card--${theme}`"
+              rounded
             >
               <div class="d-flex flex-no-wrap justify-space-between">
                 <div>
@@ -26,10 +26,9 @@
                   </v-card-title>
                 </div>
               </div>
-            </NuxtLink>
             </v-card>
-          </v-col>
-
+          </NuxtLink>
+        </v-col>
       </v-row>
     </div>
   </div>

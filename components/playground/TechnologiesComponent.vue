@@ -1,15 +1,14 @@
 <template>
   <div class="flex flex-col items-center mt-8">
-    <v-chip
-      variant="outlined"
-      rounded
-      style="
-        color: #EF4444;
-        font-weight: 600;
-      "
-    >
-      Hover pulsating effect
-    </v-chip>
+    <div :class="themeColor">
+      <v-chip
+        variant="outlined"
+        rounded
+        style="font-weight: 600;"
+      >
+        Hover pulsating effect
+      </v-chip>
+    </div>
 
     <div class="flex gap-x-4 flex-wrap justify-center">
       <div
@@ -51,6 +50,10 @@ const props = defineProps({
   }
 })
 
+const themeColor = computed(() => {
+  return colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
+})
+
 const darkModeOnly = computed(() => (darkMode) => {
   const themeLight = colorMode.value === 'light'
 
@@ -66,7 +69,6 @@ const chipStyle = (color) => {
     '--chip-glow-color': color, // This will be used for the pulsating effect
   };
 }
-
 </script>
 
 <style scoped>
