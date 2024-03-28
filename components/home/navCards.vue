@@ -12,7 +12,7 @@
             rounded
           >
             <NuxtLink
-              :to="card.to"
+              :to="localePath(card.to)"
               class="text-decoration-none"
             >
               <div class="d-flex flex-no-wrap justify-space-between">
@@ -43,6 +43,7 @@ const theme = computed(
  () => colorMode.value === 'light' ? 'light' : 'dark'
 )
 
+const localePath = useLocalePath()
 </script>
 
 <style lang="scss" scoped>

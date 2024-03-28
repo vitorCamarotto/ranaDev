@@ -25,3 +25,14 @@ useHead({
 })
 
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: filter 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  filter: brightness(0%);
+}
+</style>
