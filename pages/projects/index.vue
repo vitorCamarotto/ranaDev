@@ -23,5 +23,8 @@
 <script setup>
 import { websiteStack } from '../../constants/tech-stack.js'
 
-const websiteRepoLink = ref("<a href='https://github.com/vitorCamarotto/ranaDev' target='_blank' class='text-red-500'>Website GitHub's repository</a>")
+const colorMode = useColorMode()
+const urlColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
+
+const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/ranaDev' target='_blank' class='${urlColor}'>Website GitHub's repository</a>`)
 </script>

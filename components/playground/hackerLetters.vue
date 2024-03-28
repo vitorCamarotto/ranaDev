@@ -1,21 +1,19 @@
 <template>
   <div class="flex flex-col items-center mt-16">
-    <v-chip
-      variant="outlined"
-      rounded
-      style="
-        color: #EF4444;
-        font-weight: 600;
-      "
-    >
-      Hover Matrix letters
-    </v-chip>
+    <div :class="themeColor">
+      <v-chip
+        variant="outlined"
+        rounded
+        style="font-weight: 600;"
+      >
+        Hover Matrix letters
+      </v-chip>
+    </div>
     <h1 class="mt-8" ref="heading">VITOR</h1>
   </div>
 </template>
 
 <script setup>
-
 const heading = ref(null)
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const name = ['VITOR', 'RANA', 'CAMAROTTO', 'DEV']
@@ -45,5 +43,10 @@ onMounted(() => {
     }, 20);
 
   }
+})
+
+const colorMode = useColorMode()
+const themeColor = computed(() => {
+  return colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
 })
 </script>

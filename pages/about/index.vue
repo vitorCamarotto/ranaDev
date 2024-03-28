@@ -23,10 +23,12 @@
         {{ $t('about.professionalExp') }}
       </h2>
 
-      <div class="flex justify-center mt-4">
+      <div
+        class="flex justify-center mt-4"
+        :class="themeColor"
+      >
         <v-chip
           style="
-            color: #22d3ee;
             font-weight: 600;
             width: 100%;
           "
@@ -52,8 +54,15 @@
 </template>
 
 <script setup>
-const universityLink = ref("<a href='https://edurank.org/engineering/la/' target='_blank' class='text-red-500'>#1 University in Latin America</a>")
-const capimLink = ref("<a href='https://capim.com.br' target='_blank' class='text-red-500'>Fintech Startup in the Dental Industry</a>")
+const colorMode = useColorMode()
+const urlColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
+
+const themeColor = computed(() => {
+  return colorMode.value === 'light' ? 'text-red-400' : 'text-cyan-500'
+})
+
+const universityLink = ref(`<a href='https://edurank.org/engineering/la/' target='_blank' class='${urlColor}'>#1 University in Latin America</a>`)
+const capimLink = ref(`<a href='https://capim.com.br' target='_blank' class='${urlColor}''>Fintech Startup in the Dental Industry</a>`)
 
 import { capimStack } from '../../constants/capim-stack.js'
 </script>
