@@ -27,9 +27,12 @@ useHead({
 </script>
 
 <style>
-.page-enter-active,
+.page-enter-active {
+  transition: filter 0.6s;
+
+}
 .page-leave-active {
-  transition: filter 0.2s;
+  transition: filter 0.1s;
 }
 .page-enter-from,
 .page-leave-to {
