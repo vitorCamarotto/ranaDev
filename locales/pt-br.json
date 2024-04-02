@@ -29,8 +29,7 @@
   },
   "playground": {
     "title": "Playground",
-    "description": "Aqui é onde eu pratico minhas habilidades de front-end.",
-    "description2": "Para ativar o hover no mobile, toque dentro e fora dos componentes :)"
+    "description": "Aqui é onde eu pratico minhas habilidades de front-end."
   },
   "components": {
     "technologies": {

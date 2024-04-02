@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/test-utils/module',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
     ['@nuxtjs/i18n', {
       locales: [
         { code: 'en', iso: 'en-US', file: 'en-us.json' },

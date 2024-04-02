@@ -9,9 +9,7 @@
         {{ $t('playground.description') }}
       </p>
 
-      <p class="mb-6">
-        {{ $t('playground.description2') }}
-      </p>
+      <PlaygroundSynthwaveCard />
 
       <PlaygroundTechnologiesComponent :techStack="websiteStack" />
 
