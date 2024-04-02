@@ -9,6 +9,8 @@
         {{ $t('playground.description') }}
       </p>
 
+      <PlaygroundTrappedSpirit />
+
       <PlaygroundSynthwaveCard />
 
       <PlaygroundTechnologiesComponent :techStack="websiteStack" />
