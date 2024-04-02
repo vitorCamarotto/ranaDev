@@ -12,8 +12,6 @@
           </span>
         </transition>
       </p>
-
-      <HomeNavCards />
     </div>
   </div>
 </template>
