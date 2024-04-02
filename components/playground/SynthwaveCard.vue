@@ -71,7 +71,7 @@ const themeColor = computed(() => {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('star-jungle.jpg');
+  background-image: url('/star-jungle.jpg');
   background-size: 200%;
   background-position: center;
   filter: sepia(100%) hue-rotate(77deg);
