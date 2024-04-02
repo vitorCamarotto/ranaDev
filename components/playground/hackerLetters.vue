@@ -6,10 +6,14 @@
         rounded
         style="font-weight: 600;"
       >
-        Hover Matrix letters
+        Matrix letters
       </v-chip>
     </div>
-    <h1 class="mt-8" ref="heading">VITOR</h1>
+
+    <p class="mt-2">
+      Hover your mouse over the text!
+    </p>
+    <h1 class="mt-4" ref="heading">VITOR</h1>
   </div>
 </template>
 

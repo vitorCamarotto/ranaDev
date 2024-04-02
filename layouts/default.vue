@@ -3,7 +3,7 @@
     <v-app>
       <v-app-bar
         app
-        elevation="3"
+        elevation="0"
         :class="handleClass"
         data-test="navbar"
       >

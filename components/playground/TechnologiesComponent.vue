@@ -6,10 +6,13 @@
         rounded
         style="font-weight: 600;"
       >
-        Hover pulsating effect
+        Pulsating effect
       </v-chip>
     </div>
 
+    <p class="mt-2">
+      Hover your mouse over the chip!
+    </p>
     <div class="flex gap-x-4 flex-wrap justify-center">
       <div
         v-for="tech in techStack"
@@ -66,7 +69,7 @@ const chipStyle = (color) => {
     fontWeight: 800,
     transition: 'border-color 0.3s ease-in-out',
     '--chip-hover-border-color': `${color}33`,
-    '--chip-glow-color': color, // This will be used for the pulsating effect
+    '--chip-glow-color': color,
   };
 }
 </script>

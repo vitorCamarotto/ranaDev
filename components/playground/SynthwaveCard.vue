@@ -35,7 +35,7 @@ const themeColor = computed(() => {
   }
 
   to {
-    background-position: 0% -100%;
+    background-position: 0% 100%;
   }
 }
 
@@ -56,15 +56,15 @@ const themeColor = computed(() => {
   top: 0px;
 
   background: linear-gradient(
-    rgba(1, 128, 17, 0.71),
-    rgba(1, 128, 17, 0.71) 3px,
+    rgba(1, 128, 17, 0.3),
+    rgba(1, 128, 17, 0.3) 3px,
     transparent 3px,
     transparent 9px
   );
   background-size: 100% 9px;
   width: 100%;
   height: 100%;
-  animation: pan-overlay 60s linear infinite;
+  animation: pan-overlay 30s linear infinite;
 }
 
 .image {
@@ -75,7 +75,7 @@ const themeColor = computed(() => {
   background-size: 200%;
   background-position: center;
   filter: sepia(100%) hue-rotate(77deg);
-  opacity: 0.7;
+  opacity: 0.9;
   animation: pan-image 60s linear infinite;
 }
 
