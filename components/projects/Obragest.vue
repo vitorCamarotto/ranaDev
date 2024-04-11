@@ -10,17 +10,17 @@
       :class="borderColor"
       :style="{ width: currentWidth }"
     >
-      {{ $t('projects.PythonNeural.title') }}
+      {{ $t('projects.Obragest.title') }}
     </h2>
     <Transition name="slide-fade">
       <div v-if="isVisible">
         <p class="mt-5" :class="textColor">
-          {{ $t('projects.PythonNeural.description') }}
+          {{ $t('projects.Obragest.description') }}
         </p>
 
-        <p class="mt-4" v-html="$t('projects.PythonNeural.repo', { link: websiteRepoLink }) " />
+        <p class="mt-4" v-html="$t('projects.Obragest.repo', { link: websiteRepoLink }) " />
 
-        <TechnologiesComponent :techStack="pythonNeuralStack" />
+        <TechnologiesComponent :techStack="websiteStack" />
       </div>
 
     </Transition>
@@ -28,19 +28,19 @@
 </template>
 
 <script setup>
-import { pythonNeuralStack } from '../../constants/tech-stack.js'
+import { websiteStack } from '../../constants/tech-stack.js'
 const colorMode = useColorMode()
 const urlColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
 const borderColor = computed(() => {
   return colorMode.value === 'light' ? 'border-cyan-400' : 'border-red-500'
 })
 
-const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/PyArtificialNeuralNetworks' target='_blank' class='${urlColor}'>GitHub's repository</a>`)
+const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/obragest' target='_blank' class='${urlColor}'>GitHub's repository</a>`)
 
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('315px')
+const currentWidth = ref('230px')
 
 onMounted(() => {
   if (heading.value) {

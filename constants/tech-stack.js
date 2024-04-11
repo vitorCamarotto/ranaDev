@@ -48,11 +48,11 @@ const websiteStack = [
   }
 ]
 
-const PythonNeuralStack = [
+const pythonNeuralStack = [
   {
     name: 'Python',
     icon: 'mdi:language-python',
-    color: '#306998',
+    color: '#06b6d4',
   },
   {
     name: 'PyTorch',
@@ -79,5 +79,5 @@ const PythonNeuralStack = [
 
 export {
   websiteStack,
-  PythonNeuralStack
+  pythonNeuralStack
 }

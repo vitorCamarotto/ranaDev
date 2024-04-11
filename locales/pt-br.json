@@ -26,6 +26,16 @@
       "title": "Site Pessoal",
       "description": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
       "repo": "{link}."
+    },
+    "PythonNeural": {
+      "title": "Python Rede Neural Artificial",
+      "description": "Rede neural com intuito de prever a performance energética de edifícios",
+      "repo": "{link}."
+    },
+    "Obragest": {
+      "title": "Gerenciador de obras",
+      "description": "Uma aplicação web feita com Nuxt 3 e PostgreSQL para gerenciar obras de construção civil",
+      "repo": "{link}."
     }
   },
   "playground": {

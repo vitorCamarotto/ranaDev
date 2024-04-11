@@ -8,6 +8,8 @@
       <ProjectsPersonalWebsite />
 
       <ProjectsPythonNeural />
+
+      <ProjectsObragest />
     </div>
   </div>
 </template>
