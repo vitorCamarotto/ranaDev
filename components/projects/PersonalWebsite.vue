@@ -23,7 +23,6 @@
 
         <TechnologiesComponent :techStack="websiteStack" />
       </div>
-
     </Transition>
   </div>
 </template>

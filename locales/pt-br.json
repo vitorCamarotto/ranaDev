@@ -28,12 +28,12 @@
       "repo": "{link}."
     },
     "PyPlot": {
-      "title": "PyPlot para dissipação de calor",
+      "title": "PyPlot em dissipação de calor",
       "description": "Script Python para visualização da dissipação de calor numa barra de metal, resultado de Equações Diferencias Ordinárias.",
       "repo": "{link}."
     },
     "PythonNeural": {
-      "title": "Python Rede Neural Artificial",
+      "title": "Py Rede Neural Artificial",
       "description": "Rede neural com intuito de prever a performance energética de edifícios",
       "repo": "{link}."
     },

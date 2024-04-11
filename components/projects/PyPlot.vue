@@ -24,8 +24,7 @@
 
         <NuxtImg
           src="/pyplot-graph.png"
-          sizes="400px"
-          class="max-w-[400px] mt-5 justify-center"
+          class="max-w-[340px] md:max-w-[400px] mt-5 justify-center"
         />
       </div>
     </Transition>
@@ -45,7 +44,7 @@ const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/Ordinary
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('340px')
+const currentWidth = ref('auto')
 
 onMounted(() => {
   if (heading.value) {
