@@ -20,7 +20,7 @@
 
         <p class="mt-4" v-html="$t('projects.PythonNeural.repo', { link: websiteRepoLink }) " />
 
-        <TechnologiesComponent :techStack="PythonNeuralStack" />
+        <TechnologiesComponent :techStack="pythonNeuralStack" />
       </div>
 
     </Transition>
@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { PythonNeuralStack } from '../../constants/tech-stack.js'
+import { pythonNeuralStack } from '../../constants/tech-stack.js'
 const colorMode = useColorMode()
 const urlColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
 const borderColor = computed(() => {
@@ -40,7 +40,7 @@ const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/PyArtifi
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('320px')
+const currentWidth = ref('315px')
 
 onMounted(() => {
   if (heading.value) {
