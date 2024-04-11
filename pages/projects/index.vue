@@ -7,6 +7,8 @@
 
       <ProjectsPersonalWebsite />
 
+      <ProjectsPyPlot />
+
       <ProjectsPythonNeural />
 
       <ProjectsObragest />

@@ -26,6 +26,11 @@
       "description": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Javascript, Node.js)",
       "repo": "{link}."
     },
+    "PyPlot": {
+      "title": "PyPlot for Heat Dissipation",
+      "description": "Script Python para visualização da dissipação de calor numa barra de metal, resultado de Equações Diferencias Ordinárias.",
+      "repo": "{link}."
+    },
     "PythonNeural": {
       "title": "Python Artificial Neural Network",
       "description": "Building an ANN model to predict the energy efficiency of a building.",
