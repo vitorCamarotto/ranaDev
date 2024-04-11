@@ -27,6 +27,11 @@
       "description": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
       "repo": "{link}."
     },
+    "PyPlot": {
+      "title": "PyPlot para dissipação de calor",
+      "description": "Script Python para visualização da dissipação de calor numa barra de metal, resultado de Equações Diferencias Ordinárias.",
+      "repo": "{link}."
+    },
     "PythonNeural": {
       "title": "Python Rede Neural Artificial",
       "description": "Rede neural com intuito de prever a performance energética de edifícios",

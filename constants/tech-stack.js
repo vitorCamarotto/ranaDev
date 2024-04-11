@@ -48,6 +48,24 @@ const websiteStack = [
   }
 ]
 
+const pyPlotHeat = [
+  {
+    name: 'Python',
+    icon: 'mdi:language-python',
+    color: '#06b6d4',
+  },
+  {
+    name: 'Matplotlib',
+    icon: 'devicon-plain:matplotlib',
+    color: '#22d3ee',
+  },
+  {
+    name: 'Numpy',
+    icon: 'simple-icons:numpy',
+    color: '#38bdf8',
+  },
+]
+
 const pythonNeuralStack = [
   {
     name: 'Python',
@@ -68,16 +86,12 @@ const pythonNeuralStack = [
     name: 'Pandas',
     icon: 'simple-icons:geopandas',
     color: '#2563eb',
-  },
-  {
-    name: 'Matplotlib',
-    icon: 'devicon-plain:matplotlib',
-    color: '#0891b2',
-  },
+  }
 ]
 
 
 export {
   websiteStack,
+  pyPlotHeat,
   pythonNeuralStack
 }
