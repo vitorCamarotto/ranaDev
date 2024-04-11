@@ -2,7 +2,7 @@
   "welcome": "Bem vindo!",
   "homeRoute": "Início",
   "aboutRoute": "Sobre",
-  "contactRoute": "Contato",
+  "contactRoute": "Conecte-se",
   "projectsRoute": "Projetos",
   "playgroundRoute": "Playground",
   "about": {
@@ -18,20 +18,22 @@
     "professionalDescription2": "Evoluí rapidamente de estagiário para uma posição de nível pleno, e estou constantemente buscando desafios e maneiras de impactar a vida de outras pessoas."
   },
   "contact": {
-    "title": "Contato"
+    "title": "Conecte-se"
   },
   "projects": {
     "title": "Projetos",
-    "website": "Site pessoal",
-    "websiteDescription": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
-    "websiteRepo": "{link}.",
-    "techStack": "Tecnologias"
+    "PersonalWebsite": {
+      "title": "Site Pessoal",
+      "description": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
+      "repo": "{link}."
+    }
   },
   "playground": {
     "title": "Playground",
     "description": "Aqui é onde eu pratico minhas habilidades de front-end."
   },
   "components": {
+    "techStack": "Tecnologias",
     "technologies": {
       "Nuxt": "Nuxt",
       "Tailwind": "Tailwind",
@@ -46,7 +48,12 @@
       "Docker": "Docker",
       "Pinia": "Pinia",
       "Jest": "Jest",
-      "Postgres": "PostgreSQL"
+      "Postgres": "PostgreSQL",
+      "Python": "Python",
+      "PyTorch": "PyTorch",
+      "Numpy": "Numpy",
+      "Pandas": "Pandas",
+      "Matplotlib": "Matplotlib"
     }
   }
 }

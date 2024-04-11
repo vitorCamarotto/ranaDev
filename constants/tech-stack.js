@@ -48,6 +48,36 @@ const websiteStack = [
   }
 ]
 
+const PythonNeuralStack = [
+  {
+    name: 'Python',
+    icon: 'mdi:language-python',
+    color: '#306998',
+  },
+  {
+    name: 'PyTorch',
+    icon: 'simple-icons:pytorch',
+    color: '#ea580c',
+  },
+  {
+    name: 'Numpy',
+    icon: 'simple-icons:numpy',
+    color: '#38bdf8',
+  },
+  {
+    name: 'Pandas',
+    icon: 'simple-icons:geopandas',
+    color: '#2563eb',
+  },
+  {
+    name: 'Matplotlib',
+    icon: 'devicon-plain:matplotlib',
+    color: '#0891b2',
+  },
+]
+
+
 export {
-  websiteStack
+  websiteStack,
+  PythonNeuralStack
 }

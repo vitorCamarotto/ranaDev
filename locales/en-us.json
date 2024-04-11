@@ -2,7 +2,7 @@
   "welcome": "Welcome!",
   "homeRoute": "Home",
   "aboutRoute": "About",
-  "contactRoute": "Contact",
+  "contactRoute": "Connect",
   "projectsRoute": "Projects",
   "playgroundRoute": "Playground",
   "about": {
@@ -17,20 +17,27 @@
     "professionalDescription2": "I have quickly evolved from intern to a mid-level position, and I am constantly seeking challenges and ways to impact other people's lives."
   },
   "contact": {
-    "title": "Contact"
+    "title": "Connect"
   },
   "projects": {
     "title": "Projects",
-    "website": "Personal Website",
-    "websiteDescription": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Javascript, Node.js)",
-    "websiteRepo": "{link}.",
-    "techStack": "Technologies"
+    "PersonalWebsite": {
+      "title": "Personal Website",
+      "description": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Javascript, Node.js)",
+      "repo": "{link}."
+    },
+    "PythonNeural": {
+      "title": "Python Artificial Neural Network",
+      "description": "Building an ANN model to predict the energy efficiency of a building.",
+      "repo": "{link}."
+    }
   },
   "playground": {
     "title": "Playground",
     "description": "This is where I like to practice some front-end skills."
   },
   "components": {
+    "techStack": "Technologies",
     "technologies": {
       "Nuxt": "Nuxt",
       "Tailwind": "Tailwind",
@@ -45,7 +52,12 @@
       "Docker": "Docker",
       "Pinia": "Pinia",
       "Jest": "Jest",
-      "Postgres": "PostgreSQL"
+      "Postgres": "PostgreSQL",
+      "Python": "Python",
+      "PyTorch": "PyTorch",
+      "Numpy": "Numpy",
+      "Pandas": "Pandas",
+      "Matplotlib": "Matplotlib"
     }
   }
 }
