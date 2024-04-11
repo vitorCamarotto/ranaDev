@@ -28,7 +28,7 @@
     },
     "PyPlot": {
       "title": "PyPlot for Heat Dissipation",
-      "description": "Script Python para visualização da dissipação de calor numa barra de metal, resultado de Equações Diferencias Ordinárias.",
+      "description": "Python script to plot heat dissipation in a 1D metal bar, according to Ordinary Differential Equations.",
       "repo": "{link}."
     },
     "PythonNeural": {
