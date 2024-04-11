@@ -50,7 +50,13 @@
         <div class="hidden md:flex">
           <v-list-item v-for="item in items" :key="item.title">
             <v-list-item-title>
-              <nuxt-link :to="localePath(item.to)" :class="isActiveRoute(item)">
+              <nuxt-link
+                :to="localePath(item.to)"
+                :class="isActiveRoute(item) + hoverClass"
+                class="px-1 underline decoration-transparent underline-offset-0
+                  hover:underline transition-all duration-300 font-medium
+                "
+              >
                 {{ $t(item.title) }}
               </nuxt-link>
             </v-list-item-title>
@@ -58,9 +64,7 @@
         </div>
       </v-app-bar>
 
-      <MobileNavDrawer
-        :visible="drawerVisible"
-      />
+      <MobileNavDrawer :visible="drawerVisible" />
 
       <v-main>
         <slot />
@@ -109,10 +113,20 @@ const isActiveRoute = (item) => {
   const matchedPath = basePath + (item.to === '/' && basePath ? '' : item.to)
 
   const themeColor = colorMode.value === 'light' ? 'text-cyan-400' : 'text-red-500'
-  const twClass = `${themeColor} cursor-default`
+
+  const twClass = `${themeColor} ${hoverClass} cursor-default`
 
   return route.path === matchedPath ? twClass : ''
 }
+
+const hoverClass = computed(() => {
+  const darkHoverClass = 'hover:decoration-red-500 hover:decoration-1 hover:underline-offset-4'
+  const lightHoverClass = 'hover:decoration-cyan-300 hover:decoration-1 hover:underline-offset-4'
+
+  const hoverClass = colorMode.value === 'light' ? lightHoverClass : darkHoverClass
+
+  return hoverClass
+})
 
 const codeIconStyle = computed(() => {
   const isPlayground = route.path.endsWith('/') || route.path.endsWith('/pt')
