@@ -6,9 +6,8 @@
       </h1>
 
       <div
-        class="mt-4 flex flex-col items-center px-6 border-x-2 border-white
-          hover:border-red-500 hover:rounded-2xl transition-all duration-500
-        "
+        class="mt-4 flex flex-col items-center px-6 border-x-2 border-white transition-all duration-500"
+        :class="emailHoverClass"
       >
         <Icon
           name="material-symbols-light:mail-outline-rounded"
@@ -26,9 +25,8 @@
               <a href="https://github.com/vitorCamarotto" target="_blank">
               <Icon
                 name="akar-icons:github-outline-fill"
-                class="cursor-pointer w-full px-2 border-x-2 border-white hover:border-red-500
-                  hover:rounded-2xl hover:text-red-500 transition-all duration-500
-                "
+                class="cursor-pointer w-full px-2 border-x-2 border-white transition-all duration-500"
+                :class="hoverClass"
                 size="50px"
               />
             </a>
@@ -40,9 +38,8 @@
               <a href="https://www.linkedin.com/in/vitor-rana-camarotto/" target="_blank">
               <Icon
                 name="uit:linkedin-alt"
-                class="cursor-pointer w-full px-2 border-x-2 hover:border-red-500 hover:rounded-2xl
-                  transition-all duration-500 hover:text-red-500
-                "
+                class="cursor-pointer w-full px-2 border-x-2 border-white transition-all duration-500"
+                :class="hoverClass"
                 size="50px"
               />
             </a>
@@ -62,5 +59,19 @@ const fillColor = computed(() => {
   } else {
     return 'white'
   }
+})
+
+const hoverClass = computed(() => {
+  const darkHoverClass = 'hover:border-red-500 hover:rounded-2xl hover:text-red-500'
+  const lightHoverClass = 'hover:border-cyan-400 hover:rounded-2xl hover:text-cyan-400'
+
+  return colorMode.value === 'light' ? lightHoverClass : darkHoverClass
+})
+
+const emailHoverClass = computed(() => {
+  const darkHoverClass = 'hover:border-red-500 hover:rounded-2xl'
+  const lightHoverClass = 'hover:border-cyan-400 hover:rounded-2xl'
+
+  return colorMode.value === 'light' ? lightHoverClass : darkHoverClass
 })
 </script>
