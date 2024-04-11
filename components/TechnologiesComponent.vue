@@ -9,7 +9,7 @@
       class=""
       style="font-weight: 600;"
     >
-      {{ $t('projects.techStack') }}
+      {{ $t('components.techStack') }}
     </v-chip>
 
     <div class="flex gap-x-4 flex-wrap justify-center">

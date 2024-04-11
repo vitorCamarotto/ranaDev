@@ -23,16 +23,8 @@
         {{ $t('about.professionalExp') }}
       </h2>
 
-      <div
-        class="flex justify-center mt-4"
-        :class="themeColor"
-      >
-        <v-chip
-          style="
-            font-weight: 600;
-            width: 100%;
-          "
-        >
+      <div class="flex justify-center mt-4" :class="themeColor">
+        <v-chip style="font-weight: 600; width: 100%;">
           {{ $t('about.professionalChip') }}
         </v-chip>
       </div>
@@ -44,7 +36,6 @@
           {{ $t('about.professionalDescription2') }}
         </p>
       </div>
-
 
       <TechnologiesComponent
         :techStack="capimStack"
