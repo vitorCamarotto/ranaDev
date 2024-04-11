@@ -45,7 +45,7 @@ const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/Ordinary
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('280px')
+const currentWidth = ref('340px')
 
 onMounted(() => {
   if (heading.value) {

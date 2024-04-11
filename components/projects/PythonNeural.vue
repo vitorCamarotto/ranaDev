@@ -40,7 +40,7 @@ const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/PyArtifi
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('315px')
+const currentWidth = ref('390px')
 
 onMounted(() => {
   if (heading.value) {

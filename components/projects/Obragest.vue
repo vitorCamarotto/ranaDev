@@ -40,7 +40,7 @@ const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/obragest
 const isVisible = ref(false)
 const heading = ref(null)
 const initialContentWidth = ref('auto')
-const currentWidth = ref('230px')
+const currentWidth = ref('280px')
 
 onMounted(() => {
   if (heading.value) {
