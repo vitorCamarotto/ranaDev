@@ -6,7 +6,7 @@
       </h1>
 
       <div
-        class="mt-4 flex flex-col items-center px-6 border-x-2 border-white transition-all duration-500"
+        class="mt-4 flex flex-col items-center px-6 border-x-2 border-transparent transition-all duration-500"
         :class="emailHoverClass"
       >
         <Icon
@@ -25,7 +25,7 @@
               <a href="https://github.com/vitorCamarotto" target="_blank">
               <Icon
                 name="akar-icons:github-outline-fill"
-                class="cursor-pointer w-full px-2 border-x-2 border-white transition-all duration-500"
+                class="cursor-pointer w-full px-2 border-x-2 border-transparent transition-all duration-500"
                 :class="hoverClass"
                 size="50px"
               />
@@ -38,7 +38,7 @@
               <a href="https://www.linkedin.com/in/vitor-rana-camarotto/" target="_blank">
               <Icon
                 name="uit:linkedin-alt"
-                class="cursor-pointer w-full px-2 border-x-2 border-white transition-all duration-500"
+                class="cursor-pointer w-full px-2 border-x-2 border-transparent transition-all duration-500"
                 :class="hoverClass"
                 size="50px"
               />
