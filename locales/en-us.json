@@ -30,6 +30,11 @@
       "title": "Python Artificial Neural Network",
       "description": "Building an ANN model to predict the energy efficiency of a building.",
       "repo": "{link}."
+    },
+    "Obragest": {
+      "title": "Construction manager",
+      "description": "A web application to manage construction projects.",
+      "repo": "{link}."
     }
   },
   "playground": {
