@@ -5,41 +5,62 @@
         {{ $t('about.title') }}
       </h1>
 
-      <h2 class="mt-8">
-        {{ $t('about.me') }}
-      </h2>
+      <div class="group w-fit mt-8">
+        <div
+          class="text-center flex items-center h-20 w-20 border-l-2 rounded-full
+            group-hover:rotate-[270deg] transition-all duration-[5000ms]
+          "
+        >
+          <h2 class="ms-1 group-hover:-rotate-[270deg] transition-all duration-[5000ms] ">
+            {{ $t('about.me') }}
+          </h2>
+        </div>
 
-      <p class="mt-4">
-        {{ $t('about.description1') }}
-      </p>
+        <div class="opacity-0 group-hover:opacity-100 transition-all duration-[1000ms]">
+          <p class="mt-4">
+            {{ $t('about.description1') }}
+          </p>
 
-      <p class="mt-2">
-        {{ $t('about.description3') }}
-      </p>
+          <p class="mt-2">
+            {{ $t('about.description3') }}
+          </p>
 
-      <p class="mt-2" v-html="$t('about.description4', { link: universityLink })" />
+          <p class="mt-2" v-html="$t('about.description4', { link: universityLink })" />
 
-      <h2 class="mt-12">
-        {{ $t('about.professionalExp') }}
-      </h2>
-
-      <div class="flex justify-center mt-4" :class="themeColor">
-        <v-chip style="font-weight: 600; width: 100%;">
-          {{ $t('about.professionalChip') }}
-        </v-chip>
+        </div>
       </div>
 
-      <div class="mt-4">
-        <p v-html="$t('about.professionalDescription', { link: capimLink })" />
+      <div class="group w-fit mt-8">
+        <div
+          class="text-center flex items-center h-20 w-20 border-l-2 rounded-full
+            group-hover:rotate-[270deg] transition-all duration-[5000ms]
+          "
+        >
+          <h2 class="ms-1 group-hover:-rotate-[270deg] transition-all duration-[5000ms] ">
+            {{ $t('about.professionalExp') }}
+          </h2>
+        </div>
 
-        <p class="mt-2">
-          {{ $t('about.professionalDescription2') }}
-        </p>
+        <div class="opacity-0 group-hover:opacity-100 transition-all duration-[1000ms]">
+          <div class="flex justify-center mt-4" :class="themeColor">
+            <v-chip style="font-weight: 600; width: 100%;">
+              {{ $t('about.professionalChip') }}
+            </v-chip>
+          </div>
+
+          <div class="mt-4">
+            <p v-html="$t('about.professionalDescription', { link: capimLink })" />
+
+            <p class="mt-2">
+              {{ $t('about.professionalDescription2') }}
+            </p>
+          </div>
+
+          <TechnologiesComponent
+            :techStack="capimStack"
+          />
+        </div>
       </div>
-
-      <TechnologiesComponent
-        :techStack="capimStack"
-      />
     </div>
   </div>
 </template>

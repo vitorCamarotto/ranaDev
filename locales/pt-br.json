@@ -9,13 +9,13 @@
     "welcome": "Bem vindo"
   },
   "about": {
-    "title": "Sobre...",
-    "me": "...Mim",
+    "title": "Sobre",
+    "me": "Eu",
     "description1": "Engenheiro de Software desde 2021.",
     "description2": "Trabalhando principalmente com Vue.js e Ruby on Rails.",
     "description3": "Apaixonado por criar aplicações reais.",
     "description4": "Formado em Engenharia Civil na Escola Politécnica da USP.",
-    "professionalExp": "...Minha Experiência Profissional",
+    "professionalExp": "Minha XP",
     "professionalChip": "2021 - Presente",
     "professionalDescription": "Como Engenheiro de Software para uma Fintech Startup no ramo odontológico, fui responsável por recursos de backend e frontend e desenvolvimento de novos produtos.",
     "professionalDescription2": "Evoluí rapidamente de estagiário para uma posição de nível pleno, e estou constantemente buscando desafios e maneiras de impactar a vida de outras pessoas."
