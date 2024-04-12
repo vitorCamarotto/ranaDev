@@ -1,9 +1,11 @@
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout
+      class="transition-all duration-1000 ease-in-out"
+    >
       <NuxtPage
         :class="handleClass"
-        class="h-full mb-24"
+        class="h-full mb-24 transition-all duration-1000 ease-in-out"
       />
     </NuxtLayout>
   </div>

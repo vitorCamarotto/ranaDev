@@ -4,6 +4,10 @@
       <v-app-bar
         app
         elevation="0"
+        style="transition-property: all;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 1000ms;
+        "
         :class="handleClass"
         data-test="navbar"
       >
