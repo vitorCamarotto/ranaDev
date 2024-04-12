@@ -50,7 +50,6 @@ onMounted(() => {
   if (heading.value) {
     initialContentWidth.value = `${heading.value.offsetWidth}px`
     currentWidth.value = initialContentWidth.value
-    console.log(heading.value.offsetWidth)
   }
 })
 

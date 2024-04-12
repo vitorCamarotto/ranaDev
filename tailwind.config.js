@@ -6,5 +6,10 @@ module.exports = {
       },
     },
   },
-  darkMode: 'class'
+  darkMode: 'class',
+  variants: {
+  extend: {
+      display: ["group-hover"],
+  },
+},
 }

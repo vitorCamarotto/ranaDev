@@ -1,47 +1,58 @@
 <template>
-  <div class="p-2 flex flex-col">
-    <div class="self-center justify-self-center md:max-w-[540px]">
-      <h1 class="text-center">
+  <div class="p-2 flex flex-col items-center">
+    <div class="flex flex-col items-center md:max-w-[540px]">
+      <h1>
         <HomeHackerLetters />
       </h1>
+      <h1 class="w-[320px]">
+      </h1>
 
-      <p class="text-center">
-        <transition name="slide-fade" mode="out-in">
-          <span :key="currentText">
-            {{ currentText }}
-          </span>
-        </transition>
+      <p class="">
+        Fullstack Developer
       </p>
+
+      <div class="group flex flex-col items-center">
+        <div
+          class="w-full transition-all duration-[2000ms] opacity-0
+                  group-hover:opacity-100 delay-[3000ms]"
+        >
+          <p class="mt-20 mb-4 text-center">
+            Check out my Projects
+          </p>
+        </div>
+        <div
+          class="h-20 w-20 border-b-2 rounded-full transition-all duration-[3000ms]"
+          :class="handleMoonClass"
+        >
+        </div>
+
+        <div
+          class="mt-4 h-[200px] w-[200px] border-t-2 rounded-full transition-all duration-[3000ms]"
+          :class="handleSunClass"
+        ></div>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const colorMode = useColorMode()
 
-let interval = ref(null)
-const currentIndex = ref(0)
+const moonDarkClass = 'border-white group-hover:border-red-500 group-hover:shadow-white group-hover:shadow-2xl'
+const moonLightClass = 'border-black group-hover:border-cyan-600 group-hover:shadow-cyan-600 group-hover:shadow-2xl'
 
-onMounted(() => {
-  interval = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % englishTexts.length
-  }, 3000)
+const handleMoonClass = computed(() => {
+  return colorMode.value === 'light' ? moonLightClass : moonDarkClass
 })
 
-const englishTexts = ['Full Stack Developer', 'Creator', 'Engineer']
-const portugueseTexts = ['Desenvolvedor Full Stack', 'Criador', 'Engenheiro']
+const sunDarkClass = 'border-white group-hover:border-red-500 group-hover:shadow-orange-500/50 group-hover:shadow-xl'
+const sunLightClass = 'border-black group-hover:border-cyan-600 group-hover:shadow-cyan-600/50 group-hover:shadow-xl'
 
-const currentText = computed(() => {
-  if(locale.value === 'en') {
-    return englishTexts[currentIndex.value]
-  } else {
-    return portugueseTexts[currentIndex.value]
-  }
+const handleSunClass = computed(() => {
+  return colorMode.value === 'light' ? sunLightClass : sunDarkClass
 })
 
-onUnmounted(() => {
-  clearInterval(interval)
-})
 </script>
 
 <style scoped>
