@@ -6,9 +6,7 @@
   "projectsRoute": "Projetos",
   "playgroundRoute": "Playground",
   "home": {
-    "welcome": "Bem vindo",
-    "imRana": "Sou Rana,",
-    "dev": "Só um dev."
+    "welcome": "Bem vindo"
   },
   "about": {
     "title": "Sobre",

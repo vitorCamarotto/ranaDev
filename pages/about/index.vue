@@ -13,7 +13,7 @@
           "
           :class="handleMoonClass"
         >
-          <h2 class="ms-8 group-hover:-rotate-[270deg] transition-all duration-[5000ms] ">
+          <h2 class="ms-6 group-hover:-rotate-[270deg] transition-all duration-[5000ms] ">
             {{ $t('about.me') }}
           </h2>
         </div>
