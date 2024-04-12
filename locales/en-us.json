@@ -11,12 +11,12 @@
     "dev": "Dev."
   },
   "about": {
-    "title": "About...",
-    "me": "...Me",
+    "title": "About",
+    "me": "Me",
     "description1": "Software Engineer since 2021.",
     "description3": "Passionate about creating real-world applications.",
     "description4": "Graduated from the {link}, Polytechnic School of Engineering from University of São Paulo.",
-    "professionalExp": "...My Professional Experience",
+    "professionalExp": "My exp",
     "professionalChip": "2021 - Present",
     "professionalDescription": "As a Software Engineer at a {link}, I was responsible for backend and frontend features and new products development.",
     "professionalDescription2": "I have quickly evolved from intern to a mid-level position, and I am constantly seeking challenges and ways to impact other people's lives."
