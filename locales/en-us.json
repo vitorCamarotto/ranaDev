@@ -5,6 +5,11 @@
   "contactRoute": "Connect",
   "projectsRoute": "Projects",
   "playgroundRoute": "Playground",
+  "home": {
+    "welcome": "Welcome.",
+    "imRana": "I'm Rana,",
+    "dev": "Dev."
+  },
   "about": {
     "title": "About...",
     "me": "...Me",

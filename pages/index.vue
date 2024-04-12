@@ -1,37 +1,35 @@
 <template>
   <div class="p-2 flex flex-col items-center">
     <div class="flex flex-col items-center md:max-w-[540px]">
-      <h1>
-        <HomeHackerLetters />
-      </h1>
-      <h1 class="w-[320px]">
-      </h1>
-
-      <p class="">
-        Fullstack Developer
-      </p>
-
       <div class="group flex flex-col items-center">
-        <div
-          class="w-full transition-all duration-[2000ms] opacity-0
-                  group-hover:opacity-100 delay-[3000ms]"
+        <p class="my-2 text-center group-hover:opacity-100 delay-[5000ms]
+          w-full transition-all duration-[2000ms] opacity-0"
         >
-          <p class="mt-20 mb-4 text-center">
-            Check out my Projects
-          </p>
-        </div>
+          {{ $t('home.imRana') }}
+        </p>
+
+        <p class="my-2 text-center group-hover:opacity-100 delay-[7000ms]
+          w-full transition-all duration-[2000ms] opacity-0"
+        >
+          {{ $t('home.dev') }}
+        </p>
+
+        <p class="mb-12 text-center group-hover:opacity-100 delay-[3000ms]
+          w-full transition-all duration-[2000ms] opacity-0"
+        >
+          {{ $t('home.welcome') }}
+        </p>
+
         <div
           class="h-20 w-20 border-b-2 rounded-full transition-all duration-[3000ms]"
           :class="handleMoonClass"
-        >
-        </div>
+        />
 
         <div
           class="mt-4 h-[200px] w-[200px] border-t-2 rounded-full transition-all duration-[3000ms]"
           :class="handleSunClass"
-        ></div>
+        />
       </div>
-
     </div>
   </div>
 </template>

@@ -5,6 +5,9 @@
   "contactRoute": "Conecte-se",
   "projectsRoute": "Projetos",
   "playgroundRoute": "Playground",
+  "home": {
+    "welcome": "Bem vindo"
+  },
   "about": {
     "title": "Sobre...",
     "me": "...Mim",
