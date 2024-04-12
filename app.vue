@@ -34,7 +34,7 @@ useHead({
 
 }
 .page-leave-active {
-  transition: filter 0.1s;
+  transition: filter 0.6s;
 }
 .page-enter-from,
 .page-leave-to {
