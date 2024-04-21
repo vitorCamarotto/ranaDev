@@ -5,7 +5,7 @@
  - Dark mode ✅
  - Vitest ✅
  - Vuetify ✅
- - Animations
+ - Animations ✅
 
 ## Setup
 
