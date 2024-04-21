@@ -70,6 +70,25 @@
           </div>
         </div>
       </div>
+
+      <div class="flex flex-col mt-12">
+        <div class="self-center justify-self-center">
+          <div
+            class="border-t-2 rounded-full h-20 w-20 p-2 transition-all duration-[1000ms]"
+            :class="hoverClass"
+            @mouseenter="activateSun"
+            @mouseleave="deActivateSun"
+          >
+            <a href="https://www.youtube.com/channel/UCJWIvcmIVfQeiKjVjTs-gCQ" target="_blank">
+              <Icon
+                name="ph:youtube-logo-thin"
+                class="cursor-pointer w-full"
+                size="50px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
