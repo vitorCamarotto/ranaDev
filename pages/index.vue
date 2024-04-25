@@ -1,20 +1,22 @@
 <template>
   <div class="p-2 flex flex-col items-center">
     <div class="flex flex-col items-center md:max-w-[540px]">
+
+      <p class="mt-8 mb-12 text-center w-full transition-all opacity-0 duration-1000"
+         :class="welcomeOpacity"
+      >
+        {{ $t('home.welcome') }}
+      </p>
       <div class="group flex flex-col items-center">
-        <p class="mt-8 mb-12 text-center group-hover:opacity-100 delay-[3000ms]
-          w-full transition-all duration-[2000ms] opacity-0"
-        >
-          {{ $t('home.welcome') }}
-        </p>
+
 
         <div
-          class="h-20 w-20 border-b-2 rounded-full transition-all duration-[3000ms]"
+          class="h-20 w-20 border-t-2 rotate-180 rounded-full transition-all duration-1000"
           :class="handleMoonClass"
         />
 
         <div
-          class="mt-4 h-[200px] w-[200px] border-t-2 rounded-full transition-all duration-[3000ms]"
+          class="mt-4 h-[200px] w-[200px] border-t-2 rounded-full transition-all duration-1000"
           :class="handleSunClass"
         />
       </div>
@@ -37,6 +39,14 @@ const sunLightClass = 'border-black group-hover:border-cyan-600 group-hover:shad
 
 const handleSunClass = computed(() => {
   return colorMode.value === 'light' ? sunLightClass : sunDarkClass
+})
+
+const welcomeOpacity = ref('opacity-0')
+
+onMounted(() => {
+  setTimeout(() => {
+    welcomeOpacity.value = 'opacity-100'
+  }, 1000)
 })
 
 </script>

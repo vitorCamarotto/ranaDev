@@ -7,7 +7,7 @@
 
       <div
         class="
-          flex justify-center items-center mt-10 border-t-2
+          flex justify-center items-center mt-10 border-t-2 cursor-pointer
           rounded-full h-20 w-20 rotate-180 transition-all duration-[1000ms]
         "
         :class="hoverClass"
@@ -34,59 +34,60 @@
       <div class="flex justify-center gap-24">
         <div class="flex flex-col mt-10">
           <div class="self-center justify-self-center">
-            <div
-              class="border-t-2 rounded-full h-20 w-20 rotate-45 p-2 transition-all duration-[1000ms]"
-              :class="hoverClass"
-              @mouseenter="activateSun"
-              @mouseleave="deActivateSun"
-            >
-              <a href="https://github.com/vitorCamarotto" target="_blank">
+            <a href="https://github.com/vitorCamarotto" target="_blank">
+              <div
+                class="border-t-2 rounded-full h-20 w-20 rotate-45 p-2 transition-all duration-[1000ms]"
+                :class="hoverClass"
+                @mouseenter="activateSun"
+                @mouseleave="deActivateSun"
+              >
                 <Icon
                   name="ph:github-logo-thin"
                   class="cursor-pointer w-full -rotate-45"
                   size="50px"
                 />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="flex flex-col mt-10">
           <div class="self-center justify-self-center">
-            <div
-              class="border-t-2 rounded-full h-20 w-20 -rotate-45 p-2 transition-all duration-[1000ms]"
-              :class="hoverClass"
-              @mouseenter="activateSun"
-              @mouseleave="deActivateSun"
-            >
-              <a href="https://www.linkedin.com/in/vitor-rana-camarotto/" target="_blank">
+            <a href="https://www.linkedin.com/in/vitor-rana-camarotto/" target="_blank">
+
+              <div
+                class="border-t-2 rounded-full h-20 w-20 -rotate-45 p-2 transition-all duration-[1000ms]"
+                :class="hoverClass"
+                @mouseenter="activateSun"
+                @mouseleave="deActivateSun"
+              >
                 <Icon
                   name="uit:linkedin-alt"
                   class="cursor-pointer w-full rotate-45"
                   size="50px"
                 />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="flex flex-col mt-12">
         <div class="self-center justify-self-center">
-          <div
-            class="border-t-2 rounded-full h-20 w-20 p-2 transition-all duration-[1000ms]"
-            :class="hoverClass"
-            @mouseenter="activateSun"
-            @mouseleave="deActivateSun"
-          >
-            <a href="https://www.youtube.com/channel/UCJWIvcmIVfQeiKjVjTs-gCQ" target="_blank">
+          <a href="https://www.youtube.com/channel/UCJWIvcmIVfQeiKjVjTs-gCQ" target="_blank">
+            <div
+              class="border-t-2 rounded-full h-20 w-20 p-2 transition-all duration-[1000ms]"
+              :class="hoverClass"
+              @mouseenter="activateSun"
+              @mouseleave="deActivateSun"
+            >
               <Icon
                 name="ph:youtube-logo-thin"
                 class="cursor-pointer w-full"
                 size="50px"
               />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
