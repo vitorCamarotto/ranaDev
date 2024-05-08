@@ -2,13 +2,12 @@
   <div class="w-full flex flex-col items-center">
     <div
       class="transition-all duration-[1200ms] flex flex-col items-center"
-      :class="containerHoverClass"
     >
       <h2
         ref="heading"
         @click="toggleVisibility"
         class="
-          transition-width px-3 text-center mt-8 border-x-2
+          transition-width px-3 min-w-[270px] text-center mt-8 border-x-2
           rounded-3xl cursor-pointer select-none
         "
         :class="borderColor"
@@ -66,12 +65,12 @@ function toggleVisibility() {
 
 <style scoped>
 .slide-fade-enter-active {
-  transition: all 1.2s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
 
 }
 .slide-fade-leave-active {
-  transition: all 1.2s ease;
+  transition: all 0.5s ease;
 }
 
 .slide-fade-enter-from {
@@ -85,7 +84,7 @@ function toggleVisibility() {
 }
 
 .transition-width {
-  transition: width 1.2s ease-in-out;
+  transition: width .5s ease-in-out;
 }
 
 </style>

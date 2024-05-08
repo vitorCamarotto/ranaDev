@@ -5,13 +5,16 @@
         {{ $t('projects.title') }}
       </h1>
 
-      <ProjectsPersonalWebsite />
+      <div class="w-[540px]">
+        <ProjectsPersonalWebsite />
 
-      <ProjectsPyPlot />
+        <ProjectsObragest />
 
-      <ProjectsPythonNeural />
+        <ProjectsPyPlot />
 
-      <ProjectsObragest />
+        <ProjectsPythonNeural />
+
+      </div>
     </div>
   </div>
 </template>
