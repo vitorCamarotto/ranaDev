@@ -14,6 +14,12 @@ const websiteStack: TechStack[] = [
     darkModeOnly: false,
   },
   {
+    name: 'Typescript',
+    icon: 'mdi:language-typescript',
+    color: '#007acc',
+    darkModeOnly: false,
+  },
+  {
     name: 'Tailwind',
     icon: 'mdi:tailwind',
     color: '#0ea5e9',
