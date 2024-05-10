@@ -43,10 +43,6 @@ const borderColor = computed(() => {
   return colorMode.value === 'light' ? 'border-black' : 'border-white'
 })
 
-const containerHoverClass = computed(() => {
-  return isVisible.value ? '' : 'hover:mb-32 hover:mt-4'
-})
-
 const websiteRepoLink = ref(`<a href='https://github.com/vitorCamarotto/OrdinaryDifferentialEquations-pyPlot' target='_blank' class='${urlColor}'>GitHub's repository</a>`)
 
 const isVisible = ref(false)

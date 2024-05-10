@@ -27,7 +27,7 @@
     "title": "Projetos",
     "PersonalWebsite": {
       "title": "Site Pessoal",
-      "description": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Javascript, Node.js)",
+      "description": "O site no qual você está navegando foi feito do zero, utilizando Nuxt 3 (Vue.js, Typescript, Javascript)",
       "repo": "{link}."
     },
     "PyPlot": {
@@ -53,7 +53,7 @@
   },
   "playground": {
     "title": "Playground",
-    "description": "Aqui é onde eu pratico minhas habilidades de front-end."
+    "description": "Aqui é onde eu pratico minhas habilidades de animações."
   },
   "components": {
     "techStack": "Tecnologias",

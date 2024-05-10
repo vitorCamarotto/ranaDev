@@ -26,7 +26,7 @@
     "title": "Projects",
     "PersonalWebsite": {
       "title": "Personal Website",
-      "description": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Javascript, Node.js)",
+      "description": "This website you are currently browsing was built from scratch using Nuxt 3 (Vue.js, Typescript, Javascript)",
       "repo": "{link}."
     },
     "PyPlot": {
@@ -52,7 +52,7 @@
   },
   "playground": {
     "title": "Playground",
-    "description": "This is where I like to practice some front-end skills."
+    "description": "This is where I like to practice some animation skills."
   },
   "components": {
     "techStack": "Technologies",
