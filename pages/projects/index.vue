@@ -5,7 +5,7 @@
         {{ $t('projects.title') }}
       </h1>
 
-      <div class="w-[540px]">
+      <div>
         <ProjectsPersonalWebsite />
 
         <ProjectsObragest />
