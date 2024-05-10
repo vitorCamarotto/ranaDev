@@ -5,16 +5,11 @@
         {{ $t('projects.title') }}
       </h1>
 
-      <div class="w-[540px]">
-        <ProjectsPersonalWebsite />
-
-        <ProjectsObragest />
-
-        <ProjectsPyPlot />
-
-        <ProjectsPythonNeural />
-
-      </div>
+      <ProjectsAccordion :projects="projects" />
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import projects from '@/lib/utils/projects/projects'
+</script>

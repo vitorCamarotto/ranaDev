@@ -15,6 +15,7 @@
       >
         {{ $t('projects.Obragest.title') }}
       </h2>
+
       <Transition name="slide-fade">
         <div v-if="isVisible">
           <p class="mt-5" :class="textColor">
@@ -25,7 +26,6 @@
 
           <TechnologiesComponent :techStack="websiteStack" />
         </div>
-
       </Transition>
     </div>
   </div>
@@ -54,7 +54,6 @@ onMounted(() => {
   if (heading.value) {
     initialContentWidth.value = `${heading.value.offsetWidth}px`
     currentWidth.value = initialContentWidth.value
-    console.log(heading.value.offsetWidth)
   }
 })
 

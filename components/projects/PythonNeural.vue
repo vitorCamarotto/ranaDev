@@ -17,7 +17,7 @@
       </h2>
       <Transition name="slide-fade">
         <div v-if="isVisible">
-          <p class="mt-5" :class="textColor">
+          <p class="mt-5">
             {{ $t('projects.PythonNeural.description') }}
           </p>
 
