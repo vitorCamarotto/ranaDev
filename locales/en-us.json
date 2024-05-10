@@ -43,6 +43,11 @@
       "title": "Construction manager",
       "description": "A web application to manage construction projects.",
       "repo": "{link}."
+    },
+    "Cedotte": {
+      "title": "Cedotte",
+      "description": "A web application made for a local surfboard shop.",
+      "repo": "{link}."
     }
   },
   "playground": {

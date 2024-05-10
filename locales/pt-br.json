@@ -44,6 +44,11 @@
       "title": "Gerenciador de obras",
       "description": "Uma aplicação web feita com Nuxt 3 e PostgreSQL para gerenciar obras de construção civil",
       "repo": "{link}."
+    },
+    "Cedotte": {
+      "title": "Cedotte",
+      "description": "Aplicação web feita para uma loja local de pranchas de surf.",
+      "repo": "{link}."
     }
   },
   "playground": {

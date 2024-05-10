@@ -8,6 +8,8 @@
       <div>
         <ProjectsPersonalWebsite />
 
+        <ProjectsCedotte />
+
         <ProjectsObragest />
 
         <ProjectsPyPlot />

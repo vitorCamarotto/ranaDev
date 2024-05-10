@@ -13,16 +13,16 @@
         :class="borderColor"
         :style="{ width: currentWidth }"
       >
-        {{ $t('projects.Obragest.title') }}
+        {{ $t('projects.Cedotte.title') }}
       </h2>
 
       <Transition name="slide-fade">
         <div v-if="isVisible">
           <p class="mt-5" :class="textColor">
-            {{ $t('projects.Obragest.description') }}
+            {{ $t('projects.Cedotte.description') }}
           </p>
 
-          <p class="mt-4" v-html="$t('projects.Obragest.repo', { link: websiteRepoLink }) " />
+          <p class="mt-4" v-html="$t('projects.Cedotte.repo', { link: websiteRepoLink }) " />
 
           <TechnologiesComponent :techStack="websiteStack" />
         </div>
